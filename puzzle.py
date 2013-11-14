@@ -1,5 +1,7 @@
+ 
+    
 #Enter a and b as strings
-def multi( a, b):
+def multi2( a, b):
     y = []
     y2 = []
     y3 = 0
@@ -19,9 +21,5 @@ def multi( a, b):
     ans = y3 * y4
     return ans
  
-#Sample calls will be like so
-multi( '11', '11')    
-multi( '22', '22')
-multi( '33', '33') 
-    
+
     
