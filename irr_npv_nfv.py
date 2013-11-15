@@ -4,9 +4,10 @@
    as difference of compounded benefits and compounded costs.
    To read more about the Secant method with Net Future Value for calculating
    IRR - Please visit - http://tinyurl.com/mszpvnh .
-   This method also used Bisection Search to do the iteration - You can read about
-   it on Wikipedia.  This was developed to solve the problem sets on the Wharton's Introduction 
-   to Finance Course on Coursera'''
+   This method also uses Bisection Search to do the iteration - You can read about
+   it on Wikipedia.  It was developed to solve problem sets on the Wharton's Introduction 
+   to Corporate Finance Course offered via Coursera.  In the future, I hope to develop codes
+   to calculate IRR using other methods such as Newton Raphson etc'''
 
 
 #Net Present Value (NPV)
