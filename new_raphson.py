@@ -30,6 +30,9 @@ def f(r,cashflow):
         
     return result
 
+#Internal Rate of Return (IRR)
+#Example Call - irr([-75000, 25000, 25000, 25000, 25000 ,25000, -10000])
+
 def irr(cashflow):
     epsilon = 0.00000000000001
     guess0 = 0.01
