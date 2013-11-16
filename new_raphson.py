@@ -64,7 +64,7 @@ def npv(r,cashflow):
         total += cashflow[x]/(1+r)**x
     
     print""
-    print"RESULTS:"
+    print"RESULTS :"
     print "Net Present Value: {0:.3f}".format(total)
         
     
