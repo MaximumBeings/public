@@ -2,7 +2,7 @@
 This program uses the Newton-Raphson method to calculate IRR.  However, it does not
 work for certain cashflow streams.  It works for most cashflows and generates the same
 result as MS Excel and Wolfram Alpha.  If it cannot calculate the IRR for a certain cashflow
-stream, it will generate an error message.  This is motivated by the Introduction to Corporate Finance
+stream, it will generate an error message.    This is motivated by the Introduction to Corporate Finance
 class by Wharton  via Coursera course I am taking.
 """
 
