@@ -69,10 +69,4 @@ def npv(r,cashflow):
     print""
     print"RESULTS :"
     print "Net Present Value: {0:.3f}".format(total)
-<<<<<<< HEAD
 
-
-=======
-        
-    
->>>>>>> d52ddbbb8a4ebe6eb9eac849dfb505299b595dde
