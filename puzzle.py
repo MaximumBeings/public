@@ -1,5 +1,3 @@
- 
-    
 #Enter a and b as strings
 def multi2( a, b):
     y = []

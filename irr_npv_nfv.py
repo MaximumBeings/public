@@ -66,8 +66,8 @@ print""
 print  "CALCULATION RESULTS:"
 print('_'*20)
 print""
-print "Net Future Value: {0:.3f}".format(nfv(0.5,[-100,60,60,60])) 
+print "Net Future Value: {0:.3f}".format(nfv(0.5,[-1000,60,60,60,789])) 
 print""
-npv(0.5,[-100,60,60,60])
+npv(0.5,[-1000,60,60,60])
 print""
-irr([-100,60,60,60])
+irr([-1000,60,60,60])
