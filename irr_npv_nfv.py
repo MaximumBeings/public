@@ -18,7 +18,7 @@ def npv(r,cashflow):
     for x in range(0,len(cashflow), 1):
         total += cashflow[x]/(1+r)**x
 
-    print "Net Present Value: {0:.3f}".format(total)
+    print "Net Present Value: {0:.4f}".format(total)
         
 
 #Net Future Value Function
