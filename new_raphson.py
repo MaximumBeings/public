@@ -75,4 +75,7 @@ def npv(r,cashflow):
 =======
         
     
+<<<<<<< HEAD
+>>>>>>> d52ddbbb8a4ebe6eb9eac849dfb505299b595dde
+=======
 >>>>>>> d52ddbbb8a4ebe6eb9eac849dfb505299b595dde
