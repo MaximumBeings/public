@@ -59,7 +59,7 @@ def irr(cashflow):
         nfv1 = nfv(guess1, cashflow)
         irr = guess1 - nfv1 * (guess1 - guess0)/(nfv1-nfv0)
         remainder = irr - guess1
-    print "Internal Rate of Return: {0:.3f}".format(irr)
+    print "Internal Rate of Return: {0:.6f}".format(irr)
 
 #Sample Calls to functions:
 print""

@@ -11,7 +11,7 @@
 
 def npv(r,cashflow):
     total = 0.0
-    for x in range(0,len(cashflow), 1):
+    for x in xrange(0,len(cashflow), 1):
         total += cashflow[x]/(1+r)**x
     return total
 
