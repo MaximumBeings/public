@@ -39,7 +39,7 @@ def nfv(r,cashflow):
 
 def irr(cashflow):
     epsilon = 0.00000000000001
-    guess0 = 0.5
+    guess0 = -0.05
     guess1 = 1
     nfv0 = nfv(guess0, cashflow)
     nfv1 = nfv(guess1, cashflow)
