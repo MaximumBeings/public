@@ -50,7 +50,7 @@ def irr(cashflow):
         
         print""
         print"RESULTS:"
-        print "Internal Rate of Return: {0:.5f}".format(ans)
+        print "Internal Rate of Return: {0:.15f}".format(ans)
     
     except (OverflowError,RuntimeError, TypeError, NameError):
         print""

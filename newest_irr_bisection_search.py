@@ -1,6 +1,6 @@
 import math
 def irr(cashflow):
-    min1 = 0.0;
+    min1 = 0.01;
     max1 = 1.1;
     guess = 0.0
     epsilon = 0.0000000001

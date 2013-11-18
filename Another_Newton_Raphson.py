@@ -3,9 +3,9 @@ written in Java and I converted it to Python.  Python is a cleaner language if p
 not an issue.'''
 import math
 
-def irr(cashflow,guess):
+def irr(cashflow,guess=0.1):
     """
-    >>>irr([-20000, -7000,5000,8000,9000],0.4)
+    >>>irr([-20000, -7000,5000,8000,9000])
     >>>-0.06736035818677397
     """
     epsilon = 0.00000000001
@@ -34,7 +34,7 @@ def irr(cashflow,guess):
         print "I will be updated in the future to address these types of cashflow streams."
 
 #Example Call to Function
-#irr([-20000, -7000,5000,8000,9000],0.4)
+#irr([-20000, -7000,5000,8000,9000])
             
         
         
