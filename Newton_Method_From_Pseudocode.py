@@ -22,7 +22,7 @@ def func_prime_calculator(x):
 
 #This is the implementation of the Newton-Raphson method
 
-def newton(x):  #xo is the initial guess
+def newton(x):  #xo is the initial guess  #Sample call newton(0.1)
     epsilon = 10e-9
     maxIterationCount = 1000000
     x0 = x
