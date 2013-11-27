@@ -1,13 +1,13 @@
 """
 This code can be used to estimate the yield of a bond given other information
 such as the bond price, a guess(of the yield), time to maturity (in months) and coupon payment.
-This is my first attempt to convert the pseudocode in the textbook - A Primer for the mathermatics of Finance.
+This is my first attempt at converting the pseudocode in the textbook - A Primer for the mathermatics of Finance.
 It uses Newton-Raphson to try and estimate the yield.  Note that it is an estimate.  I still need to compare it to
 the Rate function in MS Excel and Wolfram Alpha.  In fact I need to rewrite the code in an updated version but this is
 a rough prototype.  
 
 Example Usage: Coupon 3.375%, Time to Maturity: 5 years, Bond_Price = 100 1/32, Compounding is semi-annually.
-So this information need to presented like so to the results function.
+So this information need to be presented like below to the results function.
 
 increment([6,12,18,24,30,36,42,48,54,60],[1.6875,1.6875,1.6875,1.6875,1.6875,1.6875,1.6875,1.6875,1.6875,101.6875],xold,100.03125)
 
@@ -16,7 +16,7 @@ the total number of months is 5 years and 12 = 60 so each payment is due in 6, 1
 Present the time and cashflows as vectors or list. Leave the parameter xold as is because the initial guess is set at 0.1 and the final
 parameter is the bond_Price.
 
-#Second version coming soon.
+#Second version coming soon.  But this version works as intended just need to refine the code.
 
 """
 import math
