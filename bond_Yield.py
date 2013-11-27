@@ -3,7 +3,7 @@ This code can be used to estimate the yield of a bond given other information
 such as the bond price, a guess(of the yield), time to maturity (in months) and coupon payment.
 This is my first attempt at converting the pseudocode in the textbook - A Primer for the mathermatics of Finance.
 It uses Newton-Raphson to try and estimate the yield.  Note that it is an estimate.  I still need to compare it to
-the Rate function in MS Excel and Wolfram Alpha.  In fact I need to rewrite the code in an updated version but this is
+the Yield function in MS Excel and Wolfram Alpha.  In fact I need to rewrite the code in an updated version but this is
 a rough prototype.  
 
 Example Usage: Coupon 3.375%, Time to Maturity: 5 years, Bond_Price = 100 1/32, Compounding is semi-annually.
