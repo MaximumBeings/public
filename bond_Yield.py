@@ -21,7 +21,7 @@ the total number of months is 5 years and 12 = 60 so each payment is due in 6, 1
 Present the time and cashflows as vectors or list. Leave the parameter xold as is because the initial guess is set at 0.1 and the final
 parameter is the bond_Price.
 
-#Second version coming soon.  But this version works as intended just need to refine the code.  The answer also 
+#Second version coming soon. But this version works as intended just need to refine the code.  The answer also 
 converges to the solution in the above referenced textbook.
 
 
