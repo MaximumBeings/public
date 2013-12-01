@@ -13,7 +13,8 @@ the result compares to Matlab's Financial Instrument ToolBox at a later time.  B
 implementation of the code from the above book.  Black-Scholes is an analytical formula and good for valuing instruments
 which cannot be exercised before maturity such as European Call or Put.  To value options such as American Put or call
 which can be exercised prior to maturity, you may have to use binomial models or trees.  Check out Financial Engineering
-and Risk Management on Coursera, the course gave a good treatment of these topics.  I will post codes for building binomial lattices later.
+and Risk Management on Coursera, the course gave a good treatment of these topics.  I will post codes for building 
+binomial lattices later (but it may take a long while).
 
 COMPARISON OF CODE VERSUS MATLAB FINANCIAL INSTRUMENT TOOLBOX
 You can use Matlab to price options as well by calling like so:
