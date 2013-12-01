@@ -19,7 +19,7 @@ binomial lattices later (but it may take a long while).
 COMPARISON OF CODE VERSUS MATLAB FINANCIAL INSTRUMENT TOOLBOX
 You can use Matlab to price options as well by calling like so:
 [Call, Put] = blsprice(Price, Strike, Rate, Time, Volatility, Yield)
-So if you replace the values above with the following you get the same exact prices for both put and call:
+So if you replace the parameters above with the following values you get the same exact prices for both put and call:
 [Call, Put] = blsprice(42, 40, 0.05, 0.5, 0.3, 0.03)
 
 Call = 4.7053
