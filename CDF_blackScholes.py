@@ -13,6 +13,29 @@ implementation of the code from the above book.  Black-Scholes is an analytical 
 which cannot be exercised before maturity such as European Call or Put.  To value options such as American Put or call
 which can be exercised prior to maturity, you may have to use binomial models or trees.  Check out Financial Engineering
 and Risk Management on Coursera, the course gave a good treatment of these topics.  I will post codes for building binomial lattices later.
+
+COMPARISON OF CODE VERSUS MATLAB FINANCIAL INSTRUMENT TOOLBOX
+You can use Matlab to price the option as well by calling like so:
+[Call, Put] = blsprice(Price, Strike, Rate, Time, Volatility, Yield)
+So if you replace the values above with the following you get the same exact prices for both put and call:
+[Call, Put] = blsprice(42, 40, 0.05, 0.5, 0.3, 0.03)
+
+Call = 4.7053
+
+Put = 2.3430
+
+
+If you run this code in python, like so
+(blackScholes(0,42.0,40.0,0.5,0.3,0.05,0.03,'call'))
+(blackScholes(0,42.0,40.0,0.5,0.3,0.05,0.03,'put'))
+
+You get same results as above:
+The value of a call with the given parameters is : 4.7053
+
+The value of a put with the given parameters is : 2.3430
+
+
+
 """
 def cumm_dens_function(t):
     z = abs(t)
