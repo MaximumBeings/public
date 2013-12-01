@@ -11,8 +11,8 @@ This is the an implementation to calculate Cummulative Density Function (CDF) an
 using the Pseudocode from the Primer of Mathematics for Financial Engineering by Dan Stefanica.  I will check to see how 
 the result compares to Matlab's Financial Instrument ToolBox at a later time.  But for now this is just an 
 implementation of the code from the above book.  Black-Scholes is an analytical formula and good for valuing instruments
-which cannot be exercised before maturity such as European Call or Put.  To value options such as American Put or call
-which can be exercised prior to maturity, you may have to use binomial models or trees.  Check out Financial Engineering
+that cannot be exercised before maturity such as European Call or Put.  To value options such as American Put or call
+that can be exercised prior to maturity, you may have to use binomial models or trees.  Check out Financial Engineering
 and Risk Management on Coursera, the course gave a good treatment of these topics.  I will post codes for building 
 binomial lattices later (but it may take a long while).
 
