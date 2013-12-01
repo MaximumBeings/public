@@ -15,7 +15,7 @@ which can be exercised prior to maturity, you may have to use binomial models or
 and Risk Management on Coursera, the course gave a good treatment of these topics.  I will post codes for building binomial lattices later.
 
 COMPARISON OF CODE VERSUS MATLAB FINANCIAL INSTRUMENT TOOLBOX
-You can use Matlab to price the option as well by calling like so:
+You can use Matlab to price options as well by calling like so:
 [Call, Put] = blsprice(Price, Strike, Rate, Time, Volatility, Yield)
 So if you replace the values above with the following you get the same exact prices for both put and call:
 [Call, Put] = blsprice(42, 40, 0.05, 0.5, 0.3, 0.03)
