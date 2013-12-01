@@ -17,7 +17,7 @@ So this information need to be presented like below to the results function.
 increment([6,12,18,24,30,36,42,48,54,60],[1.6875,1.6875,1.6875,1.6875,1.6875,1.6875,1.6875,1.6875,1.6875,101.6875],xold,100.03125)
 
 Note that 3.375/2 = 1.6875 which will be paid 9 times and on the tenth payment you add the face value 100 + 1.6875 to make 101.6875
-the total number of months is 5 years and 12 = 60 so each payment is due in 6, 12,18 , 24 etc month's time.
+the total number of months is 5 years * 12 = 60 so each payment is due in 6, 12,18 , 24 etc month's time.
 Present the time and cashflows as vectors or list. Leave the parameter xold as is because the initial guess is set to 0.1 and the final
 parameter is the bond_Price.
 
