@@ -90,6 +90,15 @@ def vegaImpVol(t,S,K,T,a,r,q):
 #This is the implementation of the Newton-Raphson method
 
 def impliedVolCall(t,S,K,T,r,q,Type,C): #xo is the initial guess #Sample call newton(0.1)
+        #t = beginning time
+    #S = Spot Price
+    #K = Strike
+    #T = Maturity
+    #a = volatility - is assumed to start at 0.25 here
+    #r = constant interest rate
+    #q = continous dividend rate of the underlying asset
+    #Type can be call or put - enter as strings e.g. 'call' 
+    #C = Call Price
     epsilon = 10e-9
     maxIterationCount = 1000000
     xnew = 0.25
