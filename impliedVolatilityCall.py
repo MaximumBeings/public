@@ -1,6 +1,6 @@
 """
-The market implied volatility is of an option is the value of the volatility that is 
-implicit in the market price of the option.  If we know the other parameters of an European
+The market implied volatility of an option is the value of the volatility that is 
+implicit in the market price of that option.  If we know the other parameters of an European
 call or put we can infer its implied volatility from these parameters.  This code was created
 from the pseudocode in the book - A primer for the Mathematics of Financial Engineering and
 the code will only work for a call option.  In the near future, we will create a similar one for a put option
