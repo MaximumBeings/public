@@ -32,6 +32,20 @@ Python Result:
 round(impliedVolCall(0,25.0,20.0,1.0,0.05,0.00,'call',C=7.0),5)
 
 result:0.36306
+
+The code was also benchmarked against RQuantLib using R and the result converges with the one in the textbook and this
+python code:
+
+To use RQuantLib do the following:
+
+>library(RQuantLib) 
+> EuropeanOptionImpliedVolatility(type="call", value=7.0, underlying=25.0, strike=20, dividendYield=0.00, 
+riskFreeRate=0.05,maturity=1.0, volatility=0.25)
+
+RESULT: 0.363063
+
+Which is the same as the one from the python code above.
+
     
 """
 
