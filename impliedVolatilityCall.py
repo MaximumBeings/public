@@ -117,4 +117,6 @@ def impliedVolCall(t,S,K,T,r,q,Type,C): #xo is the initial guess #Sample call ne
             return xnew
         ++i
 
+#Sample Call
+#impliedVolCall(0,25.0,20.0,1.0,0.05,0.00,'call',7.0)
     
