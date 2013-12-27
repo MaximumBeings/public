@@ -74,7 +74,7 @@ listRates = [0.10070/100,0.13055/100,0.16700/100, 0.21280/100, 0.24685/100, 0.34
 
 StartDate = "12/24/13"
 
-a = date(2013,12,24)  #Start Date - the date on which we observed the date from the source
+a = date(2013,12,24)  #Start Date - the date on which we observed the data from the source
 
 b = date(2014,12,26)  #End Date
 
