@@ -19,6 +19,13 @@ import pandas as pd
         
         Source: http://www.global-rates.com/interest-rates/libor/libor.aspx
         
+        DEFINITION:
+        The London Interbank Offered Rate is the average interest rate estimated by leading banks in London 
+        that they would be charged if borrowing from other banks. It is usually abbreviated to Libor
+        or LIBOR, or more officially to BBA Libor (for British Bankers' Association Libor) or the 
+        trademark bbalibor. It is the primary benchmark, along with the Euribor, for short term interest 
+        rates around the world......wikipedia
+        
         The LIBOR rate is only available for certain maturities, hence, for maturities
         for which there are no LIBOR rates, the rate has to be interpolated using the
         interpolation methodology available at ISDA.ORG.  The interpolation on ISDA's website 
