@@ -28,7 +28,7 @@ import pandas as pd
         
         The LIBOR rate is only available for certain maturities, hence, for maturities
         for which there are no LIBOR rates, the rate has to be interpolated using the
-        interpolation methodology available at ISDA.ORG.  The interpolation on ISDA's website 
+        interpolation methodology available at ISDA.ORG.  The interpolation on ISDA's  website 
         is a linear interpolation and works like so:
         
         R1 = Known rate with shorter designated maturity
