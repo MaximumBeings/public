@@ -20,18 +20,22 @@ Maturity    Coupon Rate     Price
 2 Years     4               103.5
 5 Years     4               109
 
-As you can see above, we only have information for 6 months, 1 year, 2 years and 5 years.  However, the bond
-portfolio consists of semi-annual coupon paying bonds so we need information for 1.5 year's time, 2.5 year's time, 3 year's time,
-4 year's time,4.5 year's in order to determine the price of a 3 year semi-annual bond etc.  So to achieve this objective, we have to bootstrap
-the zero rate using a mixture of interpolation and bootstrapping using Newton-Raphson.
+As you can see from above, we only have information for 6 months, 1 year, 2 years and 5 years.  However, the bond
+portfolio consists of semi-annual coupon paying bonds so we need information for 1.5 year's time, 2.5 year's time, 
+3 year's time, 4 year's time,4.5 year's in order to determine the price of a 3 year semi-annual coupon bond for 
+example.   So to achieve this objective, we have to bootstrap the zero rate using a mixture of interpolation and 
+bootstrapping using Newton-Raphson.
 
-The key assumption made in the book is that the cashflow are continously compounded and the formula for bootstrapping the zero rate is a little 
-bit different if the bond pays no coupon versus if it pays coupon.  In order to follow along you have to get a copy of the book or borrow it from 
-the library or your friend. (see page 153)
+The key assumption made in the book is that the cashflow are continously compounded and the formula for 
+bootstrapping the zero rate is a little bit different coupon paying bond versus non-coupon paying bond.  
+In order to follow this code, you have to get a copy of the book or borrow it from the library or your 
+friend. (see page 153)
 
- ***This is a really rough prototype and will only work for the question in the book.  However, if you know python you can edit the code to work for
- other bond portfilio.  We will update it to work for different length of maturity such as 10 years etc. i.e. make it more dynamic. Making it dynamic
- will require using python to calculate the first derivatives used in the Newton-Raphon module instead of using Wolfram Alpha
+ ***This is a really rough prototype and will only work for the question in the book (the above question).  
+ However, if you know python you can edit the code to work for other bond portfilios.  We will update it to 
+ work for different length of maturity such as 10 years etc. i.e. make it more dynamic. Making it dynamic
+ will require using python to calculate the first derivatives used in the Newton-Raphon module instead of 
+ using Wolfram Alpha.  Again, this will be dealt with at a later time.
 """
 
 #To bootstrap the zero rate for the 6 months zero-coupon paying bond we use the formula below:
@@ -172,7 +176,7 @@ df = pd.Series(data)
 df.plot()
 
 
-#Sample Output
+#Sample Output - these answers converge to the ones in the book
 """
 r06    0.020101         - Six Months
 r12    0.019603         - Year 1
