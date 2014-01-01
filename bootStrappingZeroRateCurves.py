@@ -22,9 +22,9 @@ Maturity    Coupon Rate     Price
 
 As you can see from above, we only have information for 6 months, 1 year, 2 years and 5 years.  However, the bond
 portfolio consists of semi-annual coupon paying bonds so we need information for 1.5 year's time, 2.5 year's time, 
-3 year's time, 4 year's time,4.5 year's in order to determine the price of a 3 year semi-annual coupon bond for 
-example.   So to achieve this objective, we have to bootstrap the zero rate using a mixture of interpolation and 
-bootstrapping using Newton-Raphson.
+3 year's time, 4 year's time, 4.5 year's time in order to determine the price of a 3 year semi-annual coupon bond for 
+example or price the 5 year bond.   So to achieve this objective, we have to bootstrap the zero rate 
+using a mixture of interpolation and bootstrapping using Newton-Raphson.
 
 The key assumption made in the book is that the cashflow are continously compounded and the formula for 
 bootstrapping the zero rate is a little bit different coupon paying bond versus non-coupon paying bond.  
