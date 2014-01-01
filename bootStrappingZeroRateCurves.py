@@ -61,7 +61,7 @@ def func_calculator2(x):  #Price Function for Year 2
 
 def func_prime_calculator2(x):  #Derivative of Price Function for Year 2
     return 204.0*math.exp(-2.0*x) + 1.47811*math.exp(-0.75*x)
-    #return 5.17955*math.exp(-2.66667*x) + 3.36814*math.exp(-1.75*x) + 1.91412*math.exp(-x) + 0.796093*math.exp(-0.41667*x) +510*math.exp(-5*x) + 7.37757*math.exp(-3.75*x)
+    
     
 def func_calculator5(x):  #Price Function for Year 5
     return 109.0 - 2.0*math.exp(-0.5*0.0201007) - 2.0*math.exp(-1*0.0196026) - 2.0*math.exp(-1.5*0.02077345) - 2*math.exp(-2.0*0.0219443) - 2.0*math.exp((-2.5*(x+(5*0.0219443))/6.0)) - \
