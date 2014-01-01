@@ -9,7 +9,7 @@ for a portfolio of theoretical zero-coupon bonds that are derived from the
 input bonds portfolio.
 
 STATEMENT OF PROBLEM: The coupon rate or treasury rates are only available for
-certain maturity so we need to bootstrap for dates for which there are no available rate.
+certain maturities so we need to bootstrap for dates for which there are no available rates.
 
 Consider the example below - from A Primer for the Mathematics of Financial Engineering -
 The Prices and coupon rates for four semiannual coupon bonds with face value of 100 are as follows:
