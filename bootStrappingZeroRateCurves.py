@@ -190,5 +190,51 @@ r54    0.020992         - Year 4.5
 r60    0.020802         - Year 5
 
 """
+"""
+BENCHMARKING TO MATLAB FINANCIAL INSTRUMENT TOOLBOX:
+***The answers are not the same but are close the major reason I can think of is that in the python module we did not
+take into account day count conventions and assumed that six months is 0.5 years etc.  But Matlab takes into account
+day count convention - actual/actual, 30/360 etc. 
 
+Bonds = [datenum('06/30/2000')   0.00  100  2  0  0;
+         datenum('12/31/2000')   0.04  100  2  0  0;
+         datenum('12/31/2001')   0.04  100  2  0  0;
+         datenum('12/31/2004')   0.04  100  2  0  0];
+
+Prices = [99.00;
+          102.00;
+         103.50 ;
+          109.00; ];
+
+Settle = datenum('1/1/2000');
+
+OutputCompounding = 2;
+
+[ZeroRates, CurveDates] = zbtprice(Bonds, Prices, Settle,OutputCompounding)
+
+DateNumber = 730667;
+DateNumber1 = 730851;
+DateNumber2 = 731216;
+DateNumber3 = 732312;
+
+formatOut = 'mmmm-dd-yyyy';
+str = datestr(DateNumber,formatOut)
+str2 = datestr(DateNumber1,formatOut)
+str3 = datestr(DateNumber2,formatOut)
+str4 = datestr(DateNumber3,formatOut)
+
+
+730667  0.0204      June-30-2000       %Matlab
+730851  0.0197      December-31-2000   %Matlab
+        0.0209      June-30-2001        %  (December-31-2000 + December-31-2001)/2.0 - Manually Interpolated
+731216  0.0221      December-31-2001    %Matlab
+        0.0219      June-30-2002        %  (5*December-30-2001 + December-31-2004)/6.0 - Manually Interpolated
+        0.0217      December-31-2002    %  (2*December-30-2001 + December-31-2004)/3.0 - Manually Interpolated
+        0.0215      June-30-2003        %  (December-30-2001 + December-31-2004)/2.0 - Manually Interpolated
+        0.0213      December-31-2003    %  (December-30-2001 + 2*December-31-2004)/3.0 - Manually Interpolated
+        0.0211      June-30-2004        %  (December-30-2001 + 5*December-31-2004)/6.0 - Manually Interpolated
+732312  0.0209      December-31-2004   %Matlab
+
+
+"""
 
