@@ -15,7 +15,7 @@ const double PI = 3.1415926;
 
 double cumm_dens_function(double t);
 
-double blackScholesImpVol(double t,double S,double K,double T,double a,double r,double q,string Type);
+double blackScholesImpVol(double t,double S,double K,double T,double a,double r,double q);
 
 double vegaImpVol(double t,double S,double K,double T,double a,double r,double q);
 
