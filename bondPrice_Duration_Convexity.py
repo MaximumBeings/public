@@ -20,7 +20,8 @@ Definitions:
     
 See you next time!!!!!  Going forward (if time permits) we will try to be language agnostic and also use Java, C++ and 
 C to develop our models in addition to Python.  But at the end of the day, it does not matter which language we use,
-because they are all just tools.  
+because they are all just tools....the most important thing is whether you are able to use your models to make informed 
+decisions or not.
     
     
 """
