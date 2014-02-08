@@ -18,7 +18,9 @@ Definitions:
 
     Sources: Wikipedia and Investopedia and A Primer for the Mathematics of Financial Engineering.
     
-See you next time!!!!!
+See you next time!!!!!  Going forward (if time permits) we will try to be language agnostic and also use Java, C++ and 
+C to develop our models in addition to Python.  But at the end of the day, it does not matter which language we use,
+because they are all just tools.  
     
     
 """
