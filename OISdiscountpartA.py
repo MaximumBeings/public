@@ -223,7 +223,7 @@ for x in range(0,8,1):
 
 #MV Fixed Leg is: 103667623.63209939
 print ""
-print ("Market Value of Fixed Leg: (MV_FRN) = ") + str(result)
+print ("Market Value of Fixed Leg: (MV_Fixed) = ") + str(result)
 
 #MARKET VALUE OF FLOATING RATE NOTE/LEG
 #The market value of the floating rate is is assumed to reset to par
