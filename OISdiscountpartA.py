@@ -179,6 +179,8 @@ ans = (1 - SFRRate[7-4]/100.0 * discountSFRhelper(LIBOR,7))
 final=ans/(1 + SFRRate[7-4]/100.0 * numberOfDays/360.0)
 LIBOR.append(final)
 
+#IMPLIED FORWARD RATE FROM DISCOUNT FACTORS
+
 fRate = []
 result = 0.0
 for x in range(0,8,1):
