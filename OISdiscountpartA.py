@@ -179,8 +179,8 @@ ans = (1 - SFRRate[7-4]/100.0 * discountSFRhelper(LIBOR,7))
 final=ans/(1 + SFRRate[7-4]/100.0 * numberOfDays/360.0)
 LIBOR.append(final)
 
-#IMPLIED FORWARD RATE FROM DISCOUNT FACTORS
 
+#IMPLIED FORWARD RATE FROM DISCOUNT FACTORS
 fRate = []
 result = 0.0
 for x in range(0,8,1):
@@ -190,6 +190,23 @@ for x in range(0,8,1):
         numberOfDays = (maturities[x] - maturities[x-1]).days
         result = ((LIBOR[x-1]/LIBOR[x]) - 1) * (1/(numberOfDays/360.0))
         fRate.append(result)
+
+#TO DISPLAY THE RATE TABLES - Original LIBOR/SFR, DISC_LIBOR and IMPLIED FORWARD RATE
+print ""
+rateTable = pd.DataFrame.from_items([('Period', range(1,9,1)),('Rate', rate), ('LIBOR_Disc', LIBOR),('Imp_For_Rate', fRate)])
+print(rateTable.to_string())
+        
+"""
+   Period  Rate  LIBOR_Disc  Imp_For_Rate
+0       1  0.50    0.998724      0.005000
+1       2  1.00    0.994915      0.014981
+2       3  1.60    0.987925      0.027989
+3       4  2.10    0.979152      0.035840
+4       5  2.44    0.969457      0.039132
+5       6  2.76    0.958690      0.043949
+6       7  3.08    0.946531      0.050818
+7       8  3.40    0.932957      0.057556
+"""
 
 #MARKET VALUE OF FIXED RATE NOTE/LEG
 result = 0.0
@@ -205,6 +222,8 @@ for x in range(0,8,1):
     result =  ans *100000000 * 0.0526 + 100000000 * LIBOR[-1]
 
 #MV Fixed Leg is: 103667623.63209939
+print ""
+print ("Market Value of Fixed Leg: (MV_FRN) = ") + str(result)
 
 #MARKET VALUE OF FLOATING RATE NOTE/LEG
 #The market value of the floating rate is is assumed to reset to par
@@ -222,10 +241,14 @@ for x in range(0,8,1):
         
     result2 =    100000000 * LIBOR[-1] + ans2 * 100000000
 #MV Floating Leg is: 100000000.00000001
+print ""
+print ("Market Value of Floating Leg: (MV_FRN) = ") + str(result2)
     
 
 #MARKET VALUE OF SWAP = MKTRATE FIXED - MKTRATE FLOATING
 MV = round(result - result2)  #3667624
+print ""
+print ("Market Value of Swap: (MV_Fixed _ MV_FRN) = ") + str(MV)
 #FixedLeg - FloatingLeg = 103667623.63209939 - 100000000.00000001
 #MV per article = 3662844
 #Difference between python module and article = 4780 #Deemed Immaterial/Due to rounding differences
