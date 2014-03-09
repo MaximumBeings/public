@@ -245,7 +245,7 @@ print ""
 print ("Market Value of Floating Leg: (MV_FRN) = ") + str(result2)
     
 
-#MARKET VALUE OF SWAP = MKTRATE FIXED - MKTRATE FLOATING
+#MARKET VALUE OF SWAP = MKTVALUE FIXED - MKTVALUE FLOATING
 MV = round(result - result2)  #3667624
 print ""
 print ("Market Value of Swap: (MV_Fixed _ MV_FRN) = ") + str(MV)
