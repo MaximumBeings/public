@@ -40,10 +40,10 @@ from sympy import *
 #To resolve expression at the point x = 2 we do as follows:
 #>>> expression.subs(x,2)
 #>>> -0.000335350130466478
-#To find the derivative of the variable expression we do as follows:
+#To find the derivative of the variable "expression" we do as follows:
 #>>> j = diff(expression,x)
 #>>> j.subs(x,2)
-#>>> 0040228520491
+#>>> 12.0040228520491
 #Using the above illustration we can now combine with our newton-ralphson
 #method to find the root of a function.  The function passed to the variable
 #"expression" can be changed to any function.
@@ -67,7 +67,8 @@ def func_prime_calculator(x0):
 
 #This is the implementation of the Newton-Raphson method
 
-def newton(x): #xo is the initial guess #Sample call newton(0.1)
+def newton(x): #xo is the initial guess #Sample call newton(0.1) >>>2.00002793524508
+
     epsilon = 10e-9
     maxIterationCount = 1000000
     x0 = x
