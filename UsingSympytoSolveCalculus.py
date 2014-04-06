@@ -33,7 +33,7 @@ from sympy import *
 #Suppose we want to find the root of the expression below:
 # x**4 - 5.0 * x**2 + 4.0 - 1.0 / (1 + math.e**x**3) we will approach it like so.
 # set x as a symbol
-#pass the expression into an expression called "expression"
+#pass the expression into a variable called "expression"
 #Example
 #>>> x = symbols('x')
 #>>> expression = x**4 - 5.0 * x**2 + 4.0 - 1.0 / (1 + math.e**x**3)
@@ -41,7 +41,9 @@ from sympy import *
 #>>> expression.subs(x,2)
 #>>> -0.000335350130466478
 #To find the derivative of the variable "expression" we do as follows:
-#>>> j = diff(expression,x)
+#>>> j = diff(expression,x)  #differentiate expression with respect to x
+#>>> print j
+#>>> 3.0*2.71828182845905**(x**3)*x**2/(2.71828182845905**(x**3) + 1)**2 + 4*x**3 - 10.0*x
 #>>> j.subs(x,2)
 #>>> 12.0040228520491
 #Using the above illustration we can now combine with our newton-ralphson
@@ -67,7 +69,7 @@ def func_prime_calculator(x0):
 
 #This is the implementation of the Newton-Raphson method
 
-def newton(x): #xo is the initial guess #Sample call newton(0.1) >>>2.00002793524508
+def newton(x): #xo is the initial guess #Sample call newton(0.1) >>> 2.00002793524508
 
     epsilon = 10e-9
     maxIterationCount = 1000000
