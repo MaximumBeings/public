@@ -51,10 +51,12 @@ a greater assurance in the model is to test against other implementations, hence
 function and obtained similar results.  Also, python has a unit testing functionality that we can use to ensure that the result is 
 within a certain boundary.  For instance, if we pass an initial guess of -1 to our secant method like so secant(-1) we get 0.9507482560164136
 which is different from the result above, so we can use unit test to test that the result generated gives us zero when we sub into the original
-funtion.  We are not going to do that but just be aware that you can do so.  We will be used these techniques to solve real problems in the
+funtion.  We are not going to do that but just be aware that you can do so.  We will be using these techniques to solve real problems in the
 future....everything we discuss are not end in themselves but rather means to solving business problems.  
 
 """
+
+###Alternative secant method using the mpmath open source library
 def f(x):
     return x**4 - 5*x**2 + 4 - 1.0/(1 + math.e**(x**3))
 
