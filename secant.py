@@ -61,7 +61,7 @@ def f(x):
 ###Sample call >>> print mpmath.findroot(f,-3, solver='secant')  >>>-2.07430440286585
 
 """
-Future Discussions:  So everybody and their cousins have being talking about analytics and big data and how it is going to change the world.
+Future Discussions:  So everybody is talking about analytics and big data and how it is going to change the world.
 Well yes, analytics is great but great for certain types of problems and not for others. So in the near future, we will be chiming in into the
 discussion and will be discussing the strengths and limitations of analytics.  It is used heavily in medicine, aviation, accounting, risk, algorithmic trading
 finance, statistics and in all walks of life and not just in certain fields and not quite a new phenomenon.  
