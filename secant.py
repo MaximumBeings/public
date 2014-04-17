@@ -41,8 +41,8 @@ def secant(x0):
 According to John Guttag in his edx python class, in order to have reasonable assurance in our model,
 we must have confidence in three things namely:
     
-    (a) Conceptual model - We must have an assurance that our underlying theory is reasonable
-    (b) Implementation - We must be confident that the model was properly implemented using our tool of choice
+    (a) Conceptual model - We must have an assurance that our underlying theory is reasonable/sound.
+    (b) Implementation - We must be confident that the model was properly implemented using our tool of choice.
     (c) And that we have tested the model with sufficient samples to be confident that the model will work for different
     scenarios.
 
