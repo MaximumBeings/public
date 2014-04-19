@@ -5,7 +5,7 @@ import pandas as pd
 x = [1,2,3,4,5,6,7,8,9,10,12,15,20,25,30]
 y = [0.620,0.987,1.350,1.687,1.965,2.192,2.382,2.543,2.679,2.791,2.962,3.124,3.248,3.287,3.302]
 
-#TO DISPLAY THE RATE TABLES - Original LIBOR/SFR, DISC_LIBOR and IMPLIED FORWARD RATE
+#TO DISPLAY ORIGINAL INFORMATION
 print ""
 rateTable = pd.DataFrame.from_items([('Period', x),('Original_Rate', y)])
 print(rateTable.to_string())
