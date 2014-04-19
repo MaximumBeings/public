@@ -61,7 +61,7 @@ y.sort()
 x = x + xint
 x.sort()
     
-#TO DISPLAY THE RATE TABLES - Original LIBOR/SFR, DISC_LIBOR and IMPLIED FORWARD RATE
+#TO DISPLAY INTERPOLATED DATA
 print ""
 rateTable = pd.DataFrame.from_items([('Period', x),('Rate', y)])
 print(rateTable.to_string())
