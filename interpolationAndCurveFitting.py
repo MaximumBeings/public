@@ -4,7 +4,7 @@ import pandas as pd
 import pylab
 
 """
-Discussion:  Recall the article on Interest Rate Swap Valuation available at XXXXXX,
+Discussion:  Recall the article on Interest Rate Swap Valuation available at http://tinyurl.com/mnan8ok,
 we assumed that the Swap Fixed Rate was already interpolated. The aim of this post is 
 to examine different interpolation techniques namely linear, cubic spline, zero, quadratic
 and nearest using a simple example and explain how to fit a curve.  Subsequently, we will
