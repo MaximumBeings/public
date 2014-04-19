@@ -2,6 +2,8 @@ from scipy.interpolate import interp1d
 import pylab
 import pandas as pd
 
+Source - the rates were obtained (GBP) from http://www2.isda.org/asset-classes/interest-rates-derivatives/isdafix
+
 x = [1,2,3,4,5,6,7,8,9,10,12,15,20,25,30]
 y = [0.620,0.987,1.350,1.687,1.965,2.192,2.382,2.543,2.679,2.791,2.962,3.124,3.248,3.287,3.302]
 
