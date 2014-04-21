@@ -47,6 +47,12 @@ y = [0.50/100,1/100.0,1.60/100,2.10/100,3.40/100]
 #Use scipy 1 dimensional interpolation function to interpolate
 f = interp1d(x,y, kind='linear')  #the kind can be changed to slinear, quadratic, zero, cubic, nearest
 
+#interpolate with piecewise constant function (p=0) #kind='nearest'
+#interpolate with piecewise linear function(p=1) #kind='linear'
+#interpolate with piecewise constant function (p=2) - kind='quadratic'
+#interpolate with cubic  = cubic spline
+
+
 #Create a list for the missing dates 
 xint = [15,18,21]
 
@@ -96,6 +102,12 @@ Time         Description   Rate
 ##you will realize that only slinear and linear interpolation techniques
 #fitted the original data very well.
 ##very well.
+
+#Orignal Data to benchmark interpolated data - curve fitting
+x = [3, 6, 9,12,24]
+y = [0.50/100,1/100.0,1.60/100,2.10/100,3.40/100]
+x.sort()
+y.sort()
 
 pylab.plot(x, y, 'b--')
 pylab.plot(xint, yint, '--ro')
