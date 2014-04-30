@@ -1,7 +1,7 @@
 """
 Topic: Nelson-Siegel Curve Smoothing Technique
 
-Sources: Generating a Yield Curve with Nelson-Seigel-Svensson Method in Excel -> https://www.youtube.com/watch?v=GsZRJmDcDbY
+Sources: Generating a Yield Curve with Nelson-Seigel Method in Excel -> https://www.youtube.com/watch?v=GsZRJmDcDbY
          Data fitting using fmin -> http://glowingpython.blogspot.it/2011/05/curve-fitting-using-fmin.html
          
 
