@@ -5,7 +5,7 @@ we discuss Nelson-Siegel and Nelson-Siegel-Svennson curve smoothing techniques. 
 from other discussions because these techniques were documented in MS Excel (Still working on the python versions and 
 those will be out in the near future). 
 
-The url below contains a link to an MS Excel file on DropBox which you can choose to view online or download to practice.
+The url below contains a link to an MS Excel file on DropBox which you can choose to view online or download.
 Once you get to DropBox....you will be able to view the webversion of the file consisting of three tabs namely
 a) Sources
 b) Nelson-Siegel-Svensson
