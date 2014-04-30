@@ -1,8 +1,8 @@
 Topic: Nelson Siegel and Nelson Siegel Svensson for Curve Smoothing
 
 Discussion:  In continuation of our conversation on yield curve interpolation and fitting, in this github post,
-we discussed Nelson-Siegel and Nelson-Siegel-Svennson curve smoothing techniques.  This post is a little bit different
-from our other discussion because these techniques were documented in MS Excel (Still working on the python versions and 
+we discuss Nelson-Siegel and Nelson-Siegel-Svennson curve smoothing techniques.  This post is a little bit different
+from our other discussions because these techniques were documented in MS Excel (Still working on the python versions and 
 those will be out in the near future). 
 
 The url below contains a link to an MS Excel file on DropBox which you can choose to view online or download to practice.
