@@ -1,4 +1,4 @@
-Topic: Nelson Siegel and Nelson Siegel Svensson for Curve Smoothing
+Topic: Nelson Siegel and Nelson Siegel Svensson Curve Smoothing Techniques
 
 Discussion:  In continuation of our conversation on yield curve interpolation and fitting, in this github post,
 we discuss Nelson-Siegel and Nelson-Siegel-Svennson curve smoothing techniques.  This post is a little bit different
