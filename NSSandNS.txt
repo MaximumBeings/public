@@ -11,7 +11,7 @@ a) Sources
 b) Nelson-Siegel-Svensson
 c) Nelson-Siegel
 
-https://www.dropbox.com/sh/hzu8cwvv1f5k304/7ZMI-ApJF1/NSSandNS.xlsx
+https://www.dropbox.com/s/u8x7qt5bherijc0/NSSandNS.xlsx
 
 NB: For a more complete gist about the techniques view the Youtube videos referenced in the file or other sources.  I do 
 not want to regurgitate what the presenters discussed since they did a darn good job of presenting the techniques.  Watch
