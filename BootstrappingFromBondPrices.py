@@ -1,5 +1,5 @@
 """
-Topic: Boostrapping Algebraically
+Topic: Boostrapping Spot Rates from Bond Prices Algebraically - A simple Example.
 
 Source: Extraction of Nelson-Siegel Factors from Bond Prices by Bc. Robert Berec (google it).
 
