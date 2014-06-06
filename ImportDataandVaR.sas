@@ -23,7 +23,7 @@ losses,
 8,5.7272036791
 
 # So next time we will post the SAS code to calculate Expected Shortfall even though this was done manually in
-#the course, we will implement it in python just because we can. Also we will convert the R implementation of the Merton model
+#the course, we will implement it in SAS just because we can. Also we will convert the R implementation of the Merton model
 # for calculating probability of default (PD) to SAS. 
 
 CONCLUSION:
