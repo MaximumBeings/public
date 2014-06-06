@@ -5,7 +5,7 @@
 
 #DISCUSSION: This is just a conversion of the class sample on calculation of VaR for historical
 #            loss distribution from R to Python.  I am converting some the course codes (in R) and other manual examples
-#            to Python just for the sake of doing so
+#            to Python just for the sake of doing so. Auditing the class to refresh and while away time.
 #
 #Question: Calculate the VaR at 95% confidence interval for a loss distirbution consisting of 1504 records.
 
