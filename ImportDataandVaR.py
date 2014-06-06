@@ -13,7 +13,8 @@
 #on edx - this is just to help us visualize what the data looks like).
 
 # So next time we will post the python code to calculate Expected Shortfall even though this was done manually in 
-#the course, we can implement it in python just because we can.
+#the course, we will implement it in python just because we can.  Also we will convert the R implementation of the Merton model
+# for calculating probability of default (PD) to python. 
 
     
     losses;
