@@ -13,14 +13,14 @@ TOPIC: Importing Data into Python & Calculating VaR Using Historical Loss Distri
 #on edx - this is just to help us visualize what the data looks like).
 
 losses,
-1,-1.1981768206
-2,1.0061948139
-3,0.5014854404
-4,3.0888666123
-5,-1.0104259483
-6,8.310673145
-7,-1.2446009764
-8,5.7272036791
+1;-1.1981768206
+2;1.0061948139
+3;0.5014854404
+4;3.0888666123
+5;-1.0104259483
+6;8.310673145
+7;-1.2446009764
+8;5.7272036791
 
 # So next time we will post the SAS code to calculate Expected Shortfall even though this was done manually in
 #the course, we will implement it in SAS just because we can. Also we will convert the R implementation of the Merton model
