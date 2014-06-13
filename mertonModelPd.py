@@ -10,7 +10,7 @@ It is the probability that a security will default within one year.
 
 """
 
-#We start by defining the quantities whose value is known.
+#We start by defining the quantities whose values are known.
 
 s0 = 3.0 #Equity at time 0 i.e. today.
 sigmaS = 0.8 #Instantaneous volatility of equity
