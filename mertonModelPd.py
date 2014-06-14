@@ -6,7 +6,7 @@ course to Python.
 
 DISCUSSION:  The Merton model of PD is essentially a theoretical model that most modern structural models are based on.  It
 is however still good to understand it because it helps in understanding other modern models that we will eventually discuss.
-It is the probability that a security will default within one year.
+It is the probability that a security will default within a specific timeframe.
 
 """
 
