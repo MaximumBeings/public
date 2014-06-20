@@ -102,6 +102,8 @@ y = b[2]['CCC']- b[1]['CCC']
 
 print "Hence the conditional probability is y/x"
 print str(round(y/x,4)*100) + "%"
+#>>>result
+#>>>8.89%
 
 
 
