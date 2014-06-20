@@ -101,9 +101,13 @@ print
 print "What is the probability a CCC bond default by end of the second year - b[2]['CCC']?"
 print "We first compute the probability of not defaulting by end of year 1 - 100 - b[1]['CCC']"
 x = 100 - b[1]['CCC']
+print x
+print
 
 print "The unconditional probability of defaulting during the second year is - b[2]['CCC']- b[1]['CCC']"
 y = b[2]['CCC']- b[1]['CCC']
+print y
+print
 
 print "Hence the conditional probability is y/x"
 print str(round(y/x,4)*100) + "%"
