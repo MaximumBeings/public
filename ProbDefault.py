@@ -90,15 +90,15 @@ CCC  19.79  26.92  31.63  35.97  40.15  42.64  45.10  45.10
 """
 
 print
-print "What is the probability a CCC bond default by end of the second year - b[2]['CCC']?"
+print "What is the probability that a CCC bond default by end of the second year - b[2]['CCC']?"
 print str(round(b[2]['CCC'],3)) + "%"
 
 print
-print "What is the probability a CCC bond default during the second year given that it does not default during the first year -b[2]['CCC']- b[1]['CCC']?"
+print "What is the probability that a CCC bond default during the second year given that it does not default during the first year -b[2]['CCC']- b[1]['CCC']?"
 print str(round(b[2]['CCC']- b[1]['CCC'],3)) + "%"
 
 print
-print "What is the probability a CCC bond default by end of the second year - b[2]['CCC']?"
+print "What is the probability that a CCC bond default by end of the second year - b[2]['CCC']?"
 print "We first compute the probability of not defaulting by end of year 1 - 100 - b[1]['CCC']"
 x = 100 - b[1]['CCC']
 print x
