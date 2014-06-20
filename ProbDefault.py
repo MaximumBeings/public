@@ -1,7 +1,7 @@
 """
 Topic: Representing Historical Default Probabilities in Python's Pandas
 
-Source: Introduction to Credit Risk - TU Delt via Edx
+Source: Introduction to Credit Risk Week 4 - By Pasquale Cirillo - TU Delt via Edx
 
 Discussion: Refer to week 4 lectures on Default Probabilities in the above course. These ratings are usually provided
 by one of the three rating oligopolies (they control 90% of the market according to the class slides). Some bonds are 
