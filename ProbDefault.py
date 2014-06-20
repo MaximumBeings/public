@@ -6,7 +6,7 @@ Source: Introduction to Credit Risk - TU Delt via Edx
 Discussion: Refer to week 4 lectures on Default Probabilities in the above course. These ratings are usually provided
 by one of the three rating oligopolies (they control 90% of the market according to the class slides). Some bonds are 
 rated while others are not rated so we will consider how to evaluate the credit risk for an unrated company 
-using Altman-Z score (the z score falls into the category of models known as discrimant model).  Most companies 
+using Altman-Z score (the z score falls into the category of models known as discrimant models).  Most companies 
 use a variation of the model but not the original one.
 
 This is just an attempt to replicate the class lectures on PD in Pandas Data Frame.
