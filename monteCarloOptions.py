@@ -74,6 +74,8 @@ def optionCalculator(T, K, s0, sigma, r, N, M, Type):
         premium = math.exp(-r*T) * np.mean(sumpayoff2)  #for put
     return premium
 
+#Sample Call
+#optionCalculator(1.0,100.0,100.0,0.1,0.05,500,5000,"call")
 
             
         
