@@ -22,8 +22,7 @@ Anyways, in order to generate normal random numbers from the uniform random numb
 code used Box Muller algorithm, which I converted to python (see below) but my implementation is slow so I use scipy 
 normal random number generator to generate random numbers with gaussion distribution (after a bit of googling of course). 
 Using scipy makes it much faster but not as fast as C++ but very very close (I guess there are libraries for C++ as well).  See you next 
-time when we will prolly continue our discussions on yield curves.  
-Enjoy the World Cup if you like soccer of course!
+time when we will prolly continue our discussions on yield curves. Enjoy the World Cup if you like soccer of course!
 """
 
 
