@@ -3,12 +3,14 @@
 """
 
 ********************************************************************************************************
+
 This is an update of an earlier program on the same topic to clean it up so that we can cover the second
 part that uses OIS instead of LIBOR rates.  The original version was a rough prototype and this
 one will be easier to update for the OIS version. Note that this example assumes that the
 valuation date and payment date falls on the same date so we did not take into account accruals
 between payment dates. We will do a version that covers accrual of interest rate between payment
 dates.  See you next time!!
+
 ********************************************************************************************************
 
 
