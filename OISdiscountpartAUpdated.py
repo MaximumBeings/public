@@ -71,17 +71,17 @@ fixedRate = 0.0526
 notionalPrincipal = 100000000
 SFRStartingIndex = 4
 valuationDate = datetime.date(2010, 3, 15)
-frequency = 3
+compounding = 3
  
 
 #Generate a list of cashflow payment dates
-def maturities(x,frequency):
+def maturities(x,compounding):
     maturities = []
     for y in range(1,lenOfMaturityPlusValueDate):
-        maturities.append((x)+relativedelta(months=frequency*y))
+        maturities.append((x)+relativedelta(months=compounding*y))
     return maturities
     
-maturities = maturities(valuationDate,frequency)
+maturities = maturities(valuationDate,compounding)
 
 #Calculate the discount rate for LIBOR
 def discountLIBOR():
