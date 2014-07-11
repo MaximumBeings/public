@@ -7,7 +7,7 @@ This is an update of an earlier program on the same topic to clean it up so that
 part that uses OIS instead of LIBOR rates.  The original version was a rough prototype and this
 one will be easier to update for the OIS version. Note that this example assumes that the
 valuation date and payment date falls on the same date so we did not take into account accruals
-between payment dates. So we will do a version that covers accrual of interest rate between payment
+between payment dates. We will do a version that covers accrual of interest rate between payment
 dates.  See you next time!!
 ********************************************************************************************************
 
@@ -25,7 +25,7 @@ above article as the main source. In this part of the series we only discussed
 swap valuation using LIBOR discounting. Subsequently, we will discuss the OIS
 discounting methodology. To read about the relative merit of OIS discounting over
 LIBOR discounting refer to the above article or other sources.
-NB: We will expand on our discussion at a later time and refine the program. See you next time!!
+
 
 IMPLEMENTATION:
 
@@ -110,6 +110,7 @@ def discountSFRhelper(LIBORlist,n):
     return final
 
 #Another helper function - to help copy one list to another to avoid list mutation
+#Source: StackOverFlow
 def deepcopy(A):
     rt = []
     for elem in A:
