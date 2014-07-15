@@ -5,7 +5,8 @@ Source: Ron Uri - A Practical Guide to Swap Curve Contruction - Bank of Canada (
 
 Discussion:  To develop a multi-instrument swap curve construction program in python per the above article.  Excluding
 the effect of convexity adjustment which will be addressed at a later time.  Program is a prototype and not working
-properly.  We will revisit shortly and rewrite the program from the top.  Posted as a work-in-progress.  
+properly.  We will revisit shortly and rewrite the program from the top.  Posted as a work-in-progress.  It will be a great 
+addition to our yield curve library when fully done. See you next time.
 
 *****NOT WORKING PROPERLY - FOR PROTOTYPING PURPOSES ONLY - TO BE UPDATED*********
 """
