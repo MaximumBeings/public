@@ -8,7 +8,7 @@ interest swap that is collateralized and centrally cleared. See you next time!!
 ********************************************************************************************************
 
 
-TITLE: Valuing Interest Rate Swaps Using OIS Discounting (Part A)
+TITLE: Valuing Interest Rate Swaps Using OIS Discounting (Part B)
 
 SOURCE: Boston University School of Management Research Paper Series (No.2012-­‐11)
 Valuing Interest Rate Swaps Using OIS Discounting By Donald J. Smith
