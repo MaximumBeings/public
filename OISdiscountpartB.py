@@ -365,7 +365,7 @@ Market Value of Swap: (MV Fixed - MV FRN) = $3,682,762.30
 
 Final Result from Article:
 __________________________
-MV of Fixed Leg:  $104,671,
+MV of Fixed Leg:  $104,671,244
 
 MV of Floating Leg: $100,989,671
 
