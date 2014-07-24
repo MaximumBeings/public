@@ -23,6 +23,7 @@ discounting methodology. To read about the relative merit of OIS discounting ove
 LIBOR discounting refer to the above article or other sources.
 
 
+
 Consider a 2-year, USD 100,000,000.00 (100 million USD) notional principal,
 5.26% fixed versus 3-month LIBOR, quarterly settlement swap at a time when the
 otherwise comparable at-market fixed rate is 3.40%.
