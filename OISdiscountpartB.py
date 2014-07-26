@@ -3,7 +3,7 @@
 ********************************************************************************************************
 
 This is the OIS Discounting version of an earlier program to calculate the market value of an
-interest swap that is collateralized and centrally cleared. See you next time!!
+interest rate swap that is collateralized and centrally cleared. See you next time!!
 
 ********************************************************************************************************
 
@@ -41,10 +41,10 @@ __________________________________
 21-month     SFR             3.08%
 24-month     SFR             3.40%
 
-OIS Rates:
-___________
-    
+OIS RATES:
+__________________________________
 Time         Description     Rate
+___________________________________
 3-month      OIS             0.10%
 6-month      OIS             0.60%
 9-month      OIS             1.20%
