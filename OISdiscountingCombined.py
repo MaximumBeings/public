@@ -19,8 +19,8 @@ Electronic copy available at: http://ssrn.com/abstract=2036979
 OBJECTIVE: Compare Swap Market Value using both LIBOR discounting and OIS discounting
 and discuss the python implementation of the two methodologies using the
 above article as the main source. In this part of the series we discuss
-swap valuation using OIS discounting. Previously, we discussed the LIBOR
-discounting methodology. To read about the relative merit of OIS discounting over
+both swap valuation using OIS & LIBOR discounting. Previously, we discussed  LIBOR
+& OIS discounting methodology in separate files. To read about the relative merit of OIS discounting over
 LIBOR discounting refer to the above article or other sources.
 
 
@@ -226,7 +226,7 @@ def swapMarketValue():
 #Sample Calls
 ratePrinter()
 print ""
-print "MARKET VALUE CALCULATED USING OIS DISCOUNTING"
+print "MARKET VALUE CALCULATED USING LIBOR DISCOUNTING"
 print "_____________________________________________"
 print ""
 print ("Market Value of Fixed Rate Leg = ") + str(locale.currency(fixedRateLeg(),grouping=True))
@@ -414,7 +414,7 @@ __________________________________________________________________
 6       7  3.08   0.946531      0.050818
 7       8  3.40   0.932957      0.057556
 
-MARKET VALUE CALCULATED USING OIS DISCOUNTING
+MARKET VALUE CALCULATED USING LIBOR DISCOUNTING
 _____________________________________________
 
 Market Value of Fixed Rate Leg = $103,667,623.63
