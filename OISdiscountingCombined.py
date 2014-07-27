@@ -71,7 +71,7 @@ locale.setlocale(locale.LC_ALL, '')
 THE FOLLOWING SECTION IS USED TO GENERATE THE LIBOR DISCOUNT RATES
 """
 
-#DECLASE LIBOR AND OTHER INFORMATION HERE
+#DECLARE LIBOR AND OTHER VARIABLE INFORMATION HERE
 
 val_date = datetime.date(2010, 3, 15)
 rate = [0.50,1.00,1.60,2.10,2.44,2.76,3.08,3.40] #in percentage
@@ -87,7 +87,7 @@ SFRStartingIndex = 4
 valuationDate = datetime.date(2010, 3, 15)
 compounding = 3  #Compounding is every three months
 
-#DECLARE OIS INFORMATION HERE
+#DECLARE OIS VARIABLE/INFORMATION HERE
 
 OIS = []
 rateOIS = [0.10,0.60,1.20,1.70,2.00,2.30,2.60,2.90] #OIS Rates
