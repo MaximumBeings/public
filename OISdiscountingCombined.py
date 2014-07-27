@@ -19,8 +19,8 @@ Electronic copy available at: http://ssrn.com/abstract=2036979
 OBJECTIVE: Compare Swap Market Value using both LIBOR discounting and OIS discounting
 and discuss the python implementation of the two methodologies using the
 above article as the main source. In this part of the series we discuss
-both swap valuation using OIS & LIBOR discounting. Previously, we discussed  LIBOR
-& OIS discounting methodology in separate files. To read about the relative merit of OIS discounting over
+ swap valuation using both OIS & LIBOR discounting. Previously, we discussed  LIBOR
+& OIS discounting methodologies in separate files. To read about the relative merit of OIS discounting over
 LIBOR discounting refer to the above article or other sources.
 
 
