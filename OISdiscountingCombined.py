@@ -3,7 +3,7 @@
 """
 ********************************************************************************************************
 
-These are the OIS discounting and LIBOR discounting methodologies of earlier programs we wrote on Interest
+These are the OIS discounting and LIBOR discounting versions of earlier programs we wrote on Interest
 Rate Swap Valuation combined in one file.  See you next time!!
 
 ********************************************************************************************************
