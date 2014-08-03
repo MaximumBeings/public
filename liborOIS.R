@@ -9,6 +9,11 @@
 
 #Read data from csv files after downloading
 
+#Sources:  Analytical Edge - MITx on Edx
+#          Federal Reserve Bank Online Data Repositories - libor and Fed Funds Rate
+#          RStudio
+#          ggplot2 package
+
   libor <- read.csv("liborrates.csv", header=TRUE)
   ois <- read.csv("oisrates.csv", header = TRUE)
 
