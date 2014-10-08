@@ -1,6 +1,3 @@
-
-
-
 """
 Import relevant Python libraries and packages.
 """
@@ -22,13 +19,13 @@ OBSERVED DATA:
 Observed LIBOR Rates on the Fixing Date (2014/09/17)
 ====================================================
 
-Tenor	  Rate(%)	    Comment
-O/N	    -0.04714    Observed
+Tenor	Rate(%)	    Comment
+O/N	-0.04714    Observed
 1 Week  -0.04643    Observed
-1M	    0.00071     Observed
+1M	0.00071     Observed
 2M      0.03214     Observed
-3M	    0.05000	    Observed
-6M	    0.14286	    Observed
+3M	0.05000	    Observed
+6M	0.14286	    Observed
 12M     0.30071     Observed
 
 """
@@ -38,31 +35,31 @@ PUBLIC HOLIDAYS
 
 Stock Market Holiday Schedule - 2014
 ****************************************************************
-Description					                    Date
-============					                  ======
-New Year's Day                    		  January 1, 2014
-Martin Luther King Jr. Day              January 20, 2014
-Washington's Birthday (Presidents' Day) February 17, 2014
-Good Friday                    			    April 18, 2014
-Memorial Day                    		    May 26, 2014
-Independence Day                		    July 4, 2014
-Labor Day                    			      September 1, 2014
-Thanksgiving Day				                November 27, 2014
-Christmas Day					                  December 25, 2014
+Description					Date
+============					======
+New Year's Day                    		January 1, 2014
+Martin Luther King Jr. Day             		January 20, 2014
+Washington's Birthday (Presidents' Day)         February 17, 2014
+Good Friday                    			April 18, 2014
+Memorial Day                    		May 26, 2014
+Independence Day                		July 4, 2014
+Labor Day                    			September 1, 2014
+Thanksgiving Day				November 27, 2014
+Christmas Day					December 25, 2014
 
 Stock Market Holiday Schedule - 2015
 ********************************************************************
-Description 					                    Date
-===========					                      ======
-New Year's Day					                  January 1, 2015
-Martin Luther King Jr. Day			          January 19, 2015
+Description 					Date
+===========					======
+New Year's Day					January 1, 2015
+Martin Luther King Jr. Day			January 19, 2015
 Washington's Birthday (President's Day)		February 16, 2015
-Good Friday					                      April 3, 2015
-Memorial Day					                    May 25, 2015
-Independence Day				                  July 3, 2015
-Labor Day					                        September 7, 2015
-Thanksgiving Day				                  November 26, 2015
-Christmas Day					                    December 25, 2015
+Good Friday					April 3, 2015
+Memorial Day					May 25, 2015
+Independence Day				July 3, 2015
+Labor Day					September 7, 2015
+Thanksgiving Day				November 26, 2015
+Christmas Day					December 25, 2015
 
 
 """
