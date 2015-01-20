@@ -4,13 +4,13 @@
 #To be converted to an article in the near future.  The goal is to show a simplified method for building the HL
 #model in R or Python.  
 
-***In order to find it easier to understand though readers have to wait for the article with
+#***In order to find it easier to understand though readers have to wait for the article with
 #illustrations of the trees and explanation of the program.  This is just a working file.
 
 #Background: The primary source listed below is a research paper commissioned by the CFA Institute (formerly known as 
 #AIMR) in 2001 to develop an easy framework for building/implementing short rate models in a computer program. 
 #The goal of our code is to further simplify the approach discussed in the monograph by using numerical methods 
-and R so that the models can be understood by a wider audience because in their raw forms these models
+#and R so that the models can be understood by a wider audience because in their raw forms these models
 #require a high degree of mathematical sophistication.
 
 #Motivation: This is a personal research that attempts to simplify the short-rate models discussed in the primary
