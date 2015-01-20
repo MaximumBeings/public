@@ -11,7 +11,8 @@
 #AIMR) in 2001 to develop an easy framework for building/implementing short rate models in a computer program. 
 #The goal of our code is to further simplify the approach discussed in the monograph by using numerical methods 
 #and R so that the models can be understood by a wider audience because in their raw forms these models
-#require a high degree of mathematical sophistication.
+#require a high degree of mathematical sophistication.  The five models discussed in the source which we will cover are
+#(a) Ho-Lee, (b) Kalotay-Fabozzi-Williams, (c) Black-Derman-Toy, (d) Black-Karasinski and (e) Hull-White.
 
 #Motivation: This is a personal research that attempts to simplify the short-rate models discussed in the primary
 #source further (lets hope we are successful in achieving this goal at the end of the day)
