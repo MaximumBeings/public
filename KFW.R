@@ -1,6 +1,6 @@
 #Topic : Kalotay-Fabozzi-William  Short Rate Model Prototype in R
 #Objective : Prototype Model for Constructing the Kalotay-Fabozzi-William Model in R.
-#To be converted to an article in the near future. The goal is to show a simplified method for building the HL
+#To be converted to an article in the near future. The goal is to show a simplified method for building the KFW
 #model in R or Python.
 
 #***In order to find it easier to understand though readers have to wait for the article with
