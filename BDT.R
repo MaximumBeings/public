@@ -1,5 +1,6 @@
 
 #Topic : Black-Derman-Toy Short Rate Model Prototype in R
+
 #Objective : Prototype Model for Constructing the Black-Derman-Toy Model in R.
 #To be converted to an article in the near future. The goal is to show a simplified method for building the HL
 #model in R or Python.
