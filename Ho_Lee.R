@@ -2,7 +2,7 @@
 
 #Objective : Prototype Model for Constructing the Ho Lee Short Rate Model in R.
 #To be converted to an article in the near future.  The goal is to show a simplified method for building the HL
-#model in R or Python.  
+#model in R or Python.  This is a simple exam/program for illustration only
 
 #***In order to find it easier to understand though readers have to wait for the article with
 #illustrations of the trees and explanation of the program.  This is just a working file.
