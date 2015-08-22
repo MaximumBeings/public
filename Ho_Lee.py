@@ -53,8 +53,8 @@ To be used in a forthcoming article on valuation of bonds with embedded options 
 generate the tree not released.  To be extended to other short rate models and will be used to discuss the foundations of bond
 valuation before we segway to more current topics.  It is necessary to discuss these topics because they are germane to understanding
 more advanced topics.  This model can be easily extended to KFW and BDT.  We will also discuss HW and BK.  The original model was 
-prototype a while back but this is an attempt to implement the model. The tree or lattice can then be used to value option based
-bonds via backward induction. One Love!!!
+prototyped a while back but this is an attempt to implement the model/program to automatically generate the tree with very 
+minimal manual intervention. The tree or lattice can then be used to value option based bonds via backward induction. One Love!!!
 ---------------------------------
 HO LEE SHORT RATE MODEL AUTOMATED
 ---------------------------------
