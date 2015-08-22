@@ -57,9 +57,9 @@ prototyped a while back but this is an attempt to implement the model/program to
 minimal manual intervention. As you can see the tree below is a complete replica of the one above and was done using Python. 
 Thanks to those who created the fsolve numerical method recipes in Python (or Scipy - Scientific Python) and released it 
 under open source and thanks to Coursera and edX and Stanford online for the free classes. The tree or lattice can then be 
-used to value option based bonds via backward induction. We will take a through-the-cycle approach in discussing the viz 
-valuation, accounting, hedging and risk management and other consideration.  In addition, we will  to extend the discussion 
-to how the models can be adopted in emerging markets expecially in Africa. One Love!!!
+used to value option based bonds via backward induction. We will take a through-the-cycle approach in discussing the topic viz 
+valuation, accounting, hedging and risk management and other consideration.  In addition, we will extend the discussion 
+to include how the models can be adopted in emerging markets expecially in Africa. One Love!!!
 
 ---------------------------------
 HO LEE SHORT RATE MODEL AUTOMATED
