@@ -48,6 +48,28 @@ Implementation and Calibration for the Binomial Models - Ho Lee Short Rate Model
 #
 ##########################################################################
 
+"""
+To be used in a forthcoming article on valuation of bonds with embedded options (puts and calls) - code used to automatically 
+generate the tree not released.  To be extended to other short rate models and will be used to discuss the foundations of bond
+valuation before we segway to more current topics.  It is necessary to discuss these topics because they are germane to understanding
+more advanced topics.  This model can be easily extended to KFW and BDT.  We will also discuss HW and BK.  The original model was 
+prototype a while back but this is an attempt to implement the model. The tree or lattice can then be used to value option based
+bonds via backward induction. One Love!!!
+---------------------------------
+HO LEE SHORT RATE MODEL AUTOMATED
+---------------------------------
+
+                 0                   1                   2                   3                   4                   5
+------------------|-------------------|-------------------|-------------------|-------------------|-------------------
+                                                                                                    0.0666406658433981
+                                                                                0.0632727301924193  0.0616406658433981
+                                                            0.0616475327871895  0.0582727301924193  0.0566406658433981
+                                        0.0560816551104655  0.0566475327871895  0.0532727301924193  0.0516406658433981
+                    0.0476315551112824  0.0510816551104655  0.0516475327871895  0.0482727301924194  0.0466406658433981
+0.0496900000000000  0.0526315551112824  0.0460816551104655  0.0466475327871895  0.0432727301924193  0.0416406658433982
+
+"""
+
 
 
 
