@@ -1,8 +1,9 @@
 
 """
-This is the rough prototype for the "FIRST STAGE" of the HW Trinomial Interest Rate.  The second and final stage will be implemented shortly and 
-will be published in an article.  This tree building exercise will also be extended to Black Karasinski i.e the same tree 
-can be used for BK.  You have to wait for the article to get a good/better feel for the implementation.  See you next time!!!
+This is the rough prototype for the "FIRST STAGE" of the HW Trinomial Interest Rate Tree.  The second and final stage will be 
+implemented shortly and will be published in an article.  This tree building exercise will also be extended to Black Karasinski 
+i.e the same tree can be used for BK.  You have to wait for the article to get a good/better feel for the implementation.  
+See you next time!!!
 
 Source: Options, Futures and Other Derivatives - John Hull Fifth Edition
         Short Rate Model Implementation & Extension - Chapter 6 by Ser-Huang Poon (Via Google Search)
@@ -144,6 +145,8 @@ def firstStageFinal(firstStage):
             
 print firstStageFinal(g)
 """
+I am still deciding which data structure to use here - I used a list and a tuple but i may change it to a list of list or 
+a dictionary later.
 The output from the above call look like so:
     
 [(0.16666666666666666, 0.6666666666666666, 0.16666666666666666),
@@ -159,9 +162,13 @@ The output from the above call look like so:
 """ 
 
 """
-The table below is the output from all the codes above - Manual populated but will be implemented in Pandas later.
+The table below is the output from all the codes above - Manually populated but will be implemented in Pandas later.
 This is just the first stage of the three building exercise.  We will implement the second stage later....in a couple
-of weeks or sooner if time permits.
+of weeks or sooner if time permits.  This is the way the outputs were presented in the sources.  Everything will be refined
+later.  Frankly speaking, many third-party software have these implementations already but this is just for pedagogical 
+exercise and to show what is going on under the hood if you are interested. And to write about these topics ultimately and put
+my own style/flavor on it.  No big deal.....to each his own.....Cheers!!!
+
 
 
 Node            A           B           C           D           E           F           G           H           I
