@@ -96,6 +96,30 @@ test = [list(reversed(x)) for x in trial]
 """
 
 """
+"""
+The function called firstStage above can also be implemented using list comprehension like below:
+    
+q = [[deltaR * y for y in x] for x in g]
+
+print_lattice2(q, info = [])
+
+                 0                    1                    2
+------------------|--------------------|--------------------|
+                                         -0.0346410161513775    
+                                         -0.0173205080756888    
+                    -0.0173205080756888   0.0000000000000000    
+                     0.0000000000000000   0.0173205080756888    
+0.0000000000000000   0.0173205080756888   0.0346410161513775 
+
+
+
+"""
+"""
+
+
+
+
+"""
 If we chose 10 years ... the tree will look like so.  It is trinomial because each rate can break into three versus two in 
 in the case of binomial - this is the intermediate rate *R not R so R will be build in the second stage.  The function for
 printing the tree was not released or published here.
