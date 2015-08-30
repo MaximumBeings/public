@@ -97,7 +97,7 @@ test = [list(reversed(x)) for x in trial]
 
 """
 If we chose 10 years ... the tree will look like so.  It is trinomial because each rate can break into three versus two in 
-in the case of binomial:
+in the case of binomial - this is the intermediate rate *R not R so R will be build in the second stage.
 
                  0                    1                    2                    3                    4                    5                    6                    7                    8                    9                   10
 ------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|
