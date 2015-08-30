@@ -163,7 +163,7 @@ The output from the above call look like so:
 
 """
 The table below is the output from all the codes above - Manually populated but will be implemented in Pandas later.
-This is just the first stage of the three building exercise.  We will implement the second stage later....in a couple
+This is just the first stage of the tree building exercise.  We will implement the second stage later....in a couple
 of weeks or sooner if time permits.  This is the way the outputs were presented in the sources.  Everything will be refined
 later.  Frankly speaking, many third-party software have these implementations already but this is just for pedagogical 
 exercise and to show what is going on under the hood if you are interested. And to write about these topics ultimately and put
