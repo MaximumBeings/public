@@ -96,7 +96,8 @@ test = [list(reversed(x)) for x in trial]
 """
 
 """
-If we chose 10 years ... the tree will look like so:
+If we chose 10 years ... the tree will look like so.  It is trinomial because each rate can break into three versus two in 
+in the case of binomial:
 
                  0                    1                    2                    3                    4                    5                    6                    7                    8                    9                   10
 ------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|
