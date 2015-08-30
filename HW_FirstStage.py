@@ -199,7 +199,10 @@ This is just the first stage of the tree building exercise.  We will implement t
 of weeks or sooner if time permits.  This is the way the outputs were presented in the sources.  Everything will be refined
 later.  Frankly speaking, many third-party software have these implementations already but this is just for pedagogical 
 exercise and to show what is going on under the hood if you are interested. And to write about these topics ultimately and put
-my own style/flavor on it.  No big deal.....to each his own.....Cheers!!!
+my own style/flavor on it.  That said after this project I want to use the methodologies discussed here to model 
+Multi-Curve Modeling Using Trees (to be based on a recent article by John Hull and Alan White) and also another one on CVA by 
+another author or other authors.  I think sometimes when you are trying to model the more recent topics it gets in the way if 
+you don't understand how to model the trees. But these are the core foundations so stay with me....Cheers!!!
 
 
 
