@@ -241,7 +241,31 @@ Pd              0.16666     0.22167     0.16667     0.12166     0.086667    0.22
 
 """
 
+"""
+SECOND STAGE COMPLETED ... NEEDS FINISHING TOUCHES & POLISHING:
 
+BELOW IS THE FINAL INTEREST RATE TREE AND MATCHES THE FINAL RATE FROM THE TWO SOURCES:
+
+CODES FOR THE SECOND STAGE NOT RELEASED AND WILL BE PUBLISHED IN AN ARTICLE IN THE NEAR FUTURE
+
+STAY TUNED FOR BLACK KARANSINSKI....same first stage as this one, only the second rate is different and we have to solve the rate
+
+numerically no analytical solution.  See you next time!!!!!
+"""
+
+Final Rate:
+    
+                 0                   1                   2
+------------------|-------------------|-------------------|
+                                        0.0971597185583342    
+                                        0.0798392104826454    
+                    0.0693705080756888  0.0625187024069567    
+                    0.0520500000000000  0.0451981943312679    
+0.0382400000000000  0.0347294919243112  0.0278776862555791
+
+
+"""
+"""
         
     
 
