@@ -248,7 +248,7 @@ BELOW IS THE FINAL INTEREST RATE TREE AND MATCHES THE FINAL RATE FROM THE TWO SO
 
 CODES FOR THE SECOND STAGE NOT RELEASED AND WILL BE PUBLISHED IN AN ARTICLE IN THE NEAR FUTURE
 
-STAY TUNED FOR BLACK KARANSINSKI....same first stage as this one, only the second rate is different and we have to solve the rate
+STAY TUNED FOR BLACK KARANSINSKI....same first stage as this one, only the second stage is different and we have to solve the rate
 
 numerically no analytical solution.  See you next time!!!!!
 
