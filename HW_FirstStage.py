@@ -251,6 +251,14 @@ CODES FOR THE SECOND STAGE NOT RELEASED AND WILL BE PUBLISHED IN AN ARTICLE IN T
 STAY TUNED FOR BLACK KARANSINSKI....same first stage as this one, only the second rate is different and we have to solve the rate
 
 numerically no analytical solution.  See you next time!!!!!
+
+OUTSTANDING:
+(a) Regular Binomial Tree (Pending but prototyped via HL,BDT and KFW)
+(b) Ho Lee (Done)
+(c) BDT (Prototyped)
+(d) KFW (Prototyped)
+(e) HW (Done)
+(f) BK (50% Done)
 """
 
 Final Rate:
