@@ -194,4 +194,35 @@ Pd              0.16666     0.2277      0.16666     0.1177      0.0086      0.22
 
 """
 
+"""
+Second Stage of BK Complted:  - Final Codes Not Released.....Will be featured in an upcoming article
+Final Results.  Just needs some polishing ....Stay tuned.
+                 0                   1                   2
+------------------|-------------------|-------------------|
+                                        0.0880315826933609    
+                                        0.0648132090847867    
+                    0.0564170272896411  0.0477186930343022    
+                    0.0415370083530419  0.0351328640728645    
+0.0343030000000000  0.0305816017930718  0.0258665537439405
 
+or shown to 5 decimal places as in the book
+
+      0        1        2 
+-------|--------|--------|
+                  0.08803    
+                  0.06481    
+         0.05642  0.04772    
+         0.04154  0.03513    
+0.03430  0.03058  0.02587  
+
+
+OUTSTANDING:
+(a) Regular Binomial Tree (Pending but prototyped via HL,BDT and KFW)
+(b) Ho Lee (Done)
+(c) BDT (Prototyped)
+(d) KFW (Prototyped)
+(e) HW (Done)
+(f) BK (Done)
+
+
+"""
