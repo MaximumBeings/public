@@ -4,7 +4,7 @@ Topic : Prototype for Kalotay Williams Fabozzi (KWF) Interest Rate Model in Pyth
 Source:  A Model for Valuing Bonds and Embedded Options by Andrew J. Kalotay, George O. Williams and Frank J. Fabozzi (via google)
 
 Discussion: This is another prototype for KWF interest rate model in Python.  I did one before in R but found the source listed
-above and did another prototype in Python to be converted to function this weekend if time permits.  
+above and did another prototype in Python to be converted to a function this weekend if time permits.  
 
 Random Nothings:  I am getting distracted a little from this project because I want to write an article on CyberSecurity before
 December.  CyberSecurity is the new buzzword and I wanna explore it and see what all the fuss is about and write an article about
