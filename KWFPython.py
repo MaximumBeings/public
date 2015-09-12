@@ -76,7 +76,7 @@ rdd = g
 
 print(ruu,rud,rdd)
 
-finalRate = [[r],[ru,rd],[ruu,rud,rud]]
+finalRate = [[r],[ru,rd],[ruu,rud,rdd]]
 
 finalRate2 = [list(reversed(x)) for x in finalRate]
 
