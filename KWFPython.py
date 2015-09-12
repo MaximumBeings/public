@@ -8,7 +8,7 @@ above and did another prototype in Python to be converted to function this weeke
 
 Random Nothings:  I am getting distracted a little from this project because I want to write an article on CyberSecurity before
 December.  CyberSecurity is the new buzzword and I wanna explore it and see what all the fuss is about and write an article about
-it and never ever ever think about it again.  But writing a good article takes time to research especially if you are not expert
+it and never ever ever think about it again.  But writing a good article takes time to research especially if you are not an expert
 in that domain and you just wanna do it on an ad hoc basis but the topic is of strategic importance to many organizations and countries
 even so its worth exploring...........though no amount of measure can keep a company completely safe, the only way to stay safe is
 to completely unplug but it is still important to explore the topic and the safeguards that are out there - best practices if you will.
