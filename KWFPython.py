@@ -14,8 +14,7 @@ even so its worth exploring...........though no amount of measure can keep a com
 to completely unplug but it is still important to explore the topic and the safeguards that are out there - best practices if you will.
 
 Next we will continue with the automation of this implementation and continue
-with BDT model....anticipated completion date is 3 weeks and then
-we start writing d essays.
+with the BDT model......
 
 """
 
