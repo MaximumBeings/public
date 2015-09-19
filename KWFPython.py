@@ -91,3 +91,53 @@ print_lattice2(finalRate2, info = [])
                     0.0497551231455638  0.0553245813499840
 0.0350000000000000  0.0407360494424552  0.0452959361523965
 """
+
+"""
+Snippet - final function used to call the code automatically. Other helper functions not released.
+"""
+def solutionIterator(mo,nNodes,rate3,rate2):
+    for x in range(1,nNodes):
+        data = (x,rate3)
+        mo.append(fsolve(valueCalculator2,m,args=data)[0])
+        print mo
+        rate2.append(rateCalculator2(mo[x],x))
+        rate3 = rate2[1:]
+        data = (x,rate3)
+    return rate2
+    
+rate4 = solutionIterator(mo,nNodes,rate3,rate2)[:]
+
+
+
+
+reversed_lists = [list(reversed(x)) for x in rate4]
+
+#reversed_lists[1].reverse()
+
+print "     "
+
+print "---------------------------------------------------"
+print "KALOTAY-WILLIAMS-FABOZZI SHORT RATE MODEL AUTOMATED"
+print "---------------------------------------------------"
+
+print_lattice2(reversed_lists, info = [])
+
+print "     "
+
+
+"""
+
+This is the output from the function created for the Kalotay Williams Fabozzi model.  Code not released and will be featured
+in a future article.  Next time we will model BDT, and we will start considering the applications of these models for instance
+how we can use them to bootstrap OAS - Option Adjusted Spread and Z-Spreads etc etc.  See you next time!!
+---------------------------------------------------
+KALOTAY-WILLIAMS-FABOZZI SHORT RATE MODEL AUTOMATED
+---------------------------------------------------
+
+                 0                   1                   2
+------------------|-------------------|-------------------
+                                        0.0675735962549266
+                    0.0497551231455642  0.0553245813499836
+0.0350000000000000  0.0407360494424555  0.0452959361523961
+
+"""
