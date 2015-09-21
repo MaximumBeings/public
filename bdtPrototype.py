@@ -3,13 +3,8 @@ Topic: BDT Prototype in Python
 
 Source: A One-Factor Model of Interest Rates and Its Application To Treasury Bond Options.
 
-Discussion:  Need to verify my final output with other sources.  I am sure the output I generated is correct but it is not the same as
-as the one in the article perhaps due to the interpolation methodology and rounding differences. I used Scipy...having said that I will double
-check with other journals and articles and revisit the design.  I already did this before using R but decided to do same again
-using the original essay by BDT....now I have to revisit again to make sure this is right before I automate it.
-I got exactly the same rates on the first node (time period 1) and I did the verification (see below) and my rates reverts back to
-the volatility.  Anyways, ran out of time...See you next time.  I will get to the bottom of this :).  There are so many
-essays online to use to verify the design.
+Discussion:  Need to verify my final output with other sources.  Only correct to the second node...need to fix one or two things
+before I automate it.
 """
 
 
@@ -56,13 +51,13 @@ g = fsolve(bdtOne,m)[0]
 ru = g * math.exp(2 * vol[1])
 rd = g
 
-
+vol =math.log(ru/rd)*0.5
 
 
 
 def bdtTwo(guess):
-    ruu = guess * math.exp(4 * vol[2])
-    rud = guess * math.exp(2 * vol[2])
+    ruu = guess * math.exp(4 * vol)
+    rud = guess * math.exp(2 * vol)
     rdd = guess
     N1 = (100)/(1+ruu)
     N2 = (100)/(1+rud)
@@ -74,25 +69,20 @@ def bdtTwo(guess):
 
 g = fsolve(bdtTwo,m,xtol=1.49012e-08)[0]
 
-ruu = g * math.exp(4 * vol[2])
-rud = g * math.exp(2 * vol[2])
+g = 0.0976
+ruu = g * math.exp(4 * vol)
+rud = g * math.exp(2 * vol)
 rdd = g
 
 
 
-# Verification
-vol2 = math.log(ruu/rud)*0.5
-math.log(rud/rdd)*0.5
-vol2 = 0.18
-math.log(ruu/rud)*0.5
-math.log(rud/rdd)*0.5
-#0.17999999999999994
+vol =math.log(ruu/rud)*0.5
 
 
 def bdtThree(guess):
-    ruuu = guess * math.exp(6 * vol[3])
-    ruud = guess * math.exp(4 * vol[3])
-    rdud = guess * math.exp(2 * vol[3])
+    ruuu = guess * math.exp(6 * vol)
+    ruud = guess * math.exp(4 * vol)
+    rdud = guess * math.exp(2 * vol)
     rddd = guess
   
     N1 = 100/(1+ruuu) 
@@ -112,24 +102,19 @@ def bdtThree(guess):
 g = fsolve(bdtThree,m,xtol=1.49012e-08)[0]
 
 
-ruuu = g * math.exp(6 * vol[3])
-ruud = g * math.exp(4 * vol[3])
-rdud = g * math.exp(2 * vol[3])
+ruuu = g * math.exp(6 * vol)
+ruud = g * math.exp(4 * vol)
+rdud = g * math.exp(2 * vol)
 rddd = g
 
 
-vol2 = math.log(ruuu/ruud)*0.5
-math.log(ruud/ruud)*0.5
-vol2 = 0.17
-math.log(ruuu/ruud)*0.5
-math.log(rdud/rddd)*0.5
-#0.16999999999999994
+vol =math.log(rdud/rddd)*0.5
 
 def bdtFour(guess):
-    ruuuu = guess * math.exp(8 * vol[4])
-    ruuud = guess * math.exp(6 * vol[4])
-    rudud = guess * math.exp(4 * vol[4])
-    ruddd = guess * math.exp(2 * vol[4])
+    ruuuu = guess * math.exp(8 * vol)
+    ruuud = guess * math.exp(6 * vol)
+    rudud = guess * math.exp(4 * vol)
+    ruddd = guess * math.exp(2 * vol)
     rdddd = guess 
   
     N1 = 100/(1+ruuuu) 
@@ -155,10 +140,10 @@ def bdtFour(guess):
 
 g = fsolve(bdtFour,m,xtol=1.49012e-08)[0]
 
-ruuuu = g * math.exp(8 * vol[4])
-ruuud = g * math.exp(6 * vol[4])
-rudud = g * math.exp(4 * vol[4])
-ruddd = g * math.exp(2 * vol[4])
+ruuuu = g * math.exp(8 * vol)
+ruuud = g * math.exp(6 * vol)
+rudud = g * math.exp(4 * vol)
+ruddd = g * math.exp(2 * vol)
 rdddd = g 
 
 vol2 = math.log(ruuuu/ruuud)*0.5
@@ -178,11 +163,12 @@ print_lattice2(finalRate2, info = [])
 """
                  0                   1                   2                   3                   4
 ------------------|-------------------|-------------------|-------------------|-------------------
-                                                                                0.2800765880912329
-                                                            0.2284042449051832  0.2033773447493335
-                                        0.1969412402569137  0.1625713631165124  0.1476822630523326
-                    0.1431804665295065  0.1374012409543158  0.1157134715973974  0.1072393331083148
-0.1000000000000000  0.0979155956125509  0.0958615929866076  0.0823614150268616  0.0778717384730276
+                                                                                0.3127755382482753
+                                                            0.2311312693676162  0.2138951203536187
+                                        0.2086957591204895  0.1580617555827786  0.1462746184286721
+                    0.1431804665295065  0.1427189759287803  0.1080923349154180  0.1000315666906314
+0.1000000000000000  0.0979155956125509  0.0976000000000000  0.0739201764803117  0.0684077281627750
+
 
 
 """
