@@ -3,7 +3,7 @@ Topic: BDT Prototype in Python
 
 Source: A One-Factor Model of Interest Rates and Its Application To Treasury Bond Options.
 
-Discussion:  Need to verify my final output with other sources.  Only correct to the second node...need to fix one or two things
+Discussion:  Only correct to the second node...need to fix one or two things
 before I automate it.
 """
 
