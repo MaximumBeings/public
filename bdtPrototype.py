@@ -3,12 +3,13 @@ Topic: BDT Prototype in Python
 
 Source: A One-Factor Model of Interest Rates and Its Application To Treasury Bond Options.
 
-Discussion:  Need to verify my final output wit other sources.  I am sure the output I generated is correct but it is not the same as
-as the one in the article perhaps due to the interpolation methodology and round. I used Scipy...having said that I will double
+Discussion:  Need to verify my final output with other sources.  I am sure the output I generated is correct but it is not the same as
+as the one in the article perhaps due to the interpolation methodology and rounding differences. I used Scipy...having said that I will double
 check with other journals and articles and revisit the design.  I already did this before using R but decided to do same again
-using the original essay by BDT now I have to revisit again to make sure this is right before I automate it.
-I got exactly the same on the first node (time period 1) and I did the verification (see below) and my rates reverts back to
-the volatility.  Anyways, ran out of time...See you next time.  I will get to the bottom of this :)
+using the original essay by BDT....now I have to revisit again to make sure this is right before I automate it.
+I got exactly the same rates on the first node (time period 1) and I did the verification (see below) and my rates reverts back to
+the volatility.  Anyways, ran out of time...See you next time.  I will get to the bottom of this :).  There are so many
+essays online to use to verify the design.
 """
 
 
