@@ -6,6 +6,17 @@ ation is the one you will find all over the web and in most textbooks.
 
 I only used Beninga to match my answer but did not use it as a source. The true source for this implementation is
 Binomial Tree by the CFA Institute.  
+
+Sources:  A One-Factor Model of Interest Rates and Its Application to Treasury Bond and Options by Fischer Black, Emanuel Derman
+and William Toy.
+          Technical Note No 23 - Options, Futures and Other Derivatives, Ninth Edition - The Black, Derman and Toy Model
+          Binomial Term Structure Models by Simon Benninga and Zvi Wiener ( I used it to compare the outputs only).
+          Analytical Edge - Mitx via Edx
+          Binomial Trees by CFA Institute
+          Original Version Also Used Understanding CVA, DVA, and FVA: Examples of Interest Rate Swap Valuation by Donald Smith
+          The Donald Smith article used KWF but KWF is very close to BDT.  BDT accepts coupon and par bonds as inputs this
+          accepts yield and yield volatility. The are very close.
+          Beninga to match answers (I dont understand mathematica) but the answers are exactly the same.
 """
 
 
