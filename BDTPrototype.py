@@ -22,7 +22,7 @@ and William Toy.
           Technical Note No 23 - Options, Futures and Other Derivatives, Ninth Edition - The Black, Derman and Toy Model
           Binomial Term Structure Models by Simon Benninga and Zvi Wiener ( I used it to compare the outputs only).
           Analytical Edge - Mitx via Edx
-          Several Other Sources
+          
           
 Discussion:  You have to wait for the essay to get a clearer picture.  Once we automate this, we will start writing the essays 
 in about 2-3 weeks.  See you next time!
