@@ -14,7 +14,7 @@ and William Toy.
           Analytical Edge - Mitx via Edx
           Binomial Trees by CFA Institute
           Original Version Also Used Understanding CVA, DVA, and FVA: Examples of Interest Rate Swap Valuation by Donald Smith
-          The Donald Smith article used KWF but KWF is very close to BDT.  BDT accepts coupon and par bonds as inputs this
+          The Donald Smith article used KWF but KWF is very close to BDT.  KWF accepts coupon and par bonds as inputs this
           accepts yield and yield volatility. The are very close.
           Beninga to match answers (I am not familiar with mathematica) but the answers are exactly the same.
 """
