@@ -26,6 +26,14 @@ and William Toy.
           
 Discussion:  You have to wait for the essay to get a clearer picture.  Once we automate this, we will start writing the essays 
 in about 2-3 weeks.  See you next time!
+
+Addendum: Okay I just double checked and Beninga assumed volatility is known at each date.  But market volatility is known
+but you need another volatility that will match the market one and you need the rate that will match the market price.   I will
+create a version where we can use the observed market volatility (I already did using R but will convert it to Python for commparison to Beninga)
+...that is easier to implement but this is not the true interpretation of the model for instance the volatility at node two 
+should be 0.172 not 0.18 as observed.  The interpretation by Beninga is what many authors use similar to the one I build in R 
+before but the one by John Hull is the one I used here which I think is the more correct version.  I will expantiate further 
+in due course.
 """
 
 
