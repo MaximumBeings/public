@@ -13,7 +13,7 @@ to node 3 exactly and are different for nodes 4 and 5. I am very certain that th
 difference could be due to optimization tool used.  I am still researching it but you can check Binomial Trees by Simon Benninga 
 and Zvi Wiener....they also did not get exactly the same output like in the original essay. I will prove node by node why I 
 think the output from this design is correct.  I used Scipy....Beninga used Mathematica. The output from this model matched 
-exactly with John Hull and BDT essay..up to third node.  Overall it is very close to the output by Beninga on all the nodes. The
+exactly with John Hull and BDT essay..up to third node.  Overall it is very close to the output by Beninga on all the nodes. This
 is understandable because the computer is using trial and error to find the answers....no true root like in an analytical formula.
 
 
