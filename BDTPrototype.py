@@ -218,3 +218,32 @@ print_lattice2(finalRate2, info = [])
 
 
 """
+"""
+So for lack of a better thing to do, I kept researching the reason why I did not match BDT original essay and HW essay...I then
+changed my observed volatility for years 4 and 5 to 16.22% and 14.365% while keeping every other thing constant and I got
+the exact output from the BDT's original essay and HW.  Therefore, I conclude that my design is working correctly. Two things
+could have happened, a mistake was made when the original essay was published and the yield volatility for years 4 and 5
+were wrongly published or the authors created their own solver used for finding the root.  The fact that I got the same output
+just by changing the observed volatilities for years 4 and 5 alone can never be due to chance alone.  I will create a function to automate
+this version by this weekend.  I needed to convince myself that the design was reasonable before I use it to write an article.
+See you next time!!!
+
+
+
+Maturity            Yield(%)       Yield_Volatility
+1                   10             20
+2                   11             19
+3                   12             18
+4                   12.5           16.22
+5                   13             14.365
+
+                  0                    1                    2                    3                    4
+-------------------|--------------------|--------------------|--------------------|--------------------
+                                                                                    25.5274613060448452
+                                                               21.7932168838317857  19.4777905282819681
+                                          19.4187211153878927  16.0560289635507445  14.8618117295429375
+                     14.3180466529506027  13.7668689349777740  11.8291882952643519  11.3397588686288291
+10.0000000000000000   9.7915595612550543   9.7599980527384123   8.7150874006566372   8.6523859633498965
+
+
+"""
