@@ -177,8 +177,55 @@ print_lattice2(finalRate2, info = [])
                     0.1431804665295065  0.1374012409543162  0.1157134715973972  0.1072393331083146
 0.1000000000000000  0.0979155956125509  0.0958615929866079  0.0823614150268615  0.0778717384730274
 
+"""
+
+"""
+This is the function to call the automated version of the BDT prototype that matches Benninga.  I will create another one
+for the prototype that matches the HW version.  Helper functions not included so you have to wait for an article on the topic.
+I have decided that I am just going to automate the two versions of the implementation.  Take what you want from it. 
+"""
+
+def solutionIterator(mo,nNodes,rate3,rate2):
+    for x in range(1,nNodes):
+        data = (x,rate3)
+        mo.append(fsolve(valueCalculator2,m,args=data)[0])
+        #print mo
+        rate2.append(rateCalculator2(mo[x],x))
+        rate3 = rate2[1:]
+        data = (x,rate3)
+    return rate2
+    
+rate4 = solutionIterator(mo,nNodes,rate3,rate2)[:]
 
 
 
+
+reversed_lists = [list(reversed(x)) for x in rate4]
+
+#reversed_lists[1].reverse()
+
+print "     "
+
+print "---------------------------------------------------"
+print "BLACK-DERMAN-TOY SHORT RATE MODEL AUTOMATED - VERSION THAT MATCHES BENNINGA"
+print "---------------------------------------------------"
+
+print_lattice2(reversed_lists, info = [])
+
+print "     "
+
+
+"""
+---------------------------------------------------
+BLACK-DERMAN-TOY SHORT RATE MODEL AUTOMATED - VERSION THAT MATCHES BENNINGA
+---------------------------------------------------
+
+                 0                   1                   2                   3                   4
+------------------|-------------------|-------------------|-------------------|-------------------
+                                                                                0.2800765880912328
+                                                            0.2284042449051828  0.2033773447493335
+                                        0.1969412402569142  0.1625713631165121  0.1476822630523326
+                    0.1431804665295063  0.1374012409543162  0.1157134715973972  0.1072393331083148
+0.1000000000000000  0.0979155956125507  0.0958615929866078  0.0823614150268615  0.0778717384730276
 
 """
