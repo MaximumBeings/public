@@ -221,7 +221,7 @@ print_lattice2(finalRate2, info = [])
 """
 So for lack of a better thing to do, I kept researching the reason why I did not match BDT original essay and HW essay...I then
 changed my observed volatility for years 4 and 5 to 16.22% and 14.365% while keeping every other thing constant and I got
-the exact output from the BDT's original essay and HW.  Therefore, I conclude that my design is working correctly. Two things
+the same exact output from the BDT's original essay and HW.  Therefore, I conclude that my design is working correctly. Two things
 could have happened, a mistake was made when the original essay was published and the yield volatility for years 4 and 5
 were wrongly published or the authors created their own solver used for finding the root.  The fact that I got the same output
 just by changing the observed volatilities for years 4 and 5 alone can never be due to chance alone.  I will create a function to automate
