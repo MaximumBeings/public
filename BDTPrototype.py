@@ -247,3 +247,38 @@ Maturity            Yield(%)       Yield_Volatility
 
 
 """
+"""
+Automation completed for version that matches John Hull and BDT Original Essay...Code for function not released.  The output
+in two number formats are shown below.  Code still needs some polishing here and there. So we finished the modeling ahead of time...the
+original completion date was October 15, 2015.  Because we have some extra time...I will fine tune a prototype for modeling
+Credit Default SWap I wrote in R and convert it to Python and another one on European type Swaption (I have to create this
+one from the scratch) and then LIBOR yield Curve (Multi-instrument paradigm....I was writing this one last year but I need to finish it).
+After October 15, 2015 we will start writing the essays.  See you next time!!!
+
+---------------------------------------------------
+BLACK-DERMAN-TOY SHORT RATE MODEL AUTOMATED - VERSION THAT MATCHES JOHN HULL
+---------------------------------------------------
+
+                 0                   1                   2                   3                   4
+------------------|-------------------|-------------------|-------------------|-------------------
+                                                                                0.2552746130604483
+                                                            0.2179321688383177  0.1947779052828195
+                                        0.1941872111538781  0.1605602896355074  0.1486181172954292
+                    0.1431804665295065  0.1376686893497773  0.1182918829526436  0.1133975886862881
+0.1000000000000000  0.0979155956125509  0.0975999805273839  0.0871508740065665  0.0865238596334988
+
+
+---------------------------------------------------
+BLACK-DERMAN-TOY SHORT RATE MODEL AUTOMATED - VERSION THAT MATCHES JOHN HULL
+---------------------------------------------------
+
+                  0                    1                    2                    3                    4
+-------------------|--------------------|--------------------|--------------------|--------------------
+                                                                                    25.5274613060448310
+                                                               21.7932168838317679  19.4777905282819503
+                                          19.4187211153878145  16.0560289635507445  14.8618117295429197
+                     14.3180466529506525  13.7668689349777331  11.8291882952643626  11.3397588686288113
+10.0000000000000000   9.7915595612550899   9.7599980527383909   8.7150874006566514   8.6523859633498823
+     
+
+"""
