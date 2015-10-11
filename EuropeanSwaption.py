@@ -5,9 +5,10 @@ Source: FA Journal By the CFA Institute 1991 By David R. Smith
 
 Discussion: 40% Done. The model below pretty much shows how to bootstrap spot rate from YTM.   We have done this 
 before several times but consider it a refresher and a slightly different approach.  We used numerical methods
-to bootstrap the semi-annual swap rates but we could have calculated them analytically.  May be we will do it 
+to bootstrap the semi-annual spot rates but we could have calculated them analytically.  May be we will do it 
 analytically soon.  Anyways, what we have done so far will feed into our model to price a European Swaption.  We
-will continue with the implementation soon.  See you next time!!!
+will continue with the implementation soon. The output from this model are the spot rates and discount rates.
+See you next time!!!
 
 """
 
