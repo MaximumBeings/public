@@ -251,11 +251,11 @@ print
 #print anuitizedModelPricePutSwaption(cashflow,period, spot)    
 print
 value_put_swaption = anuitizedModelPricePutSwaption(cashflow,period, spot)/100 * 100000000
-print str(locale.currency(value_put_swaption,grouping=True)) + " : This up-front value of 1.1304 is equivalent to $1,130,400 on a $100 million notional principal amount"
+print str(value_put_swaption) + " : This up-front value of 1.1304 is equivalent to $1,130,400 on a $100 million notional principal amount"
 
 print
 value_call_swaption = anuitizedModelPriceCallSwaption(cashflow,period, spot)/100 * 100000000
-print str(locale.currency(value_call_swaption,grouping=True))  + " : This up-front value of 0.9718 is equivalent to $971,809.80 on a $100 million notional principal amount"
+print str(value_call_swaption)  + " : This up-front value of 0.9718 is equivalent to $971,809.80 on a $100 million notional principal amount"
 
 """
 $1,130,357.33 : This up-front value of 1.1304 is equivalent to $1,130,400 on a $100 million notional principal amount
@@ -264,7 +264,7 @@ $971,809.80 : This up-front value of 0.9718 is equivalent to $971,809.80 on a $1
 
 """
 """
-CHECKING THE VALIDILITY OF THE MODEL:
+CHECKING THE VALIDILITY OF THE MODEL - FROM THE JOURNAL - VERY IMPORTANT FOR BUILDING INTUITION:
 The validity of the model can be checked by applying the put-call parity theorem.  The put-call parity theorem specifies that:
 
 Price of Call - Price of Put = F - X * e ** (-r * T)    
@@ -279,8 +279,72 @@ r = interest rate and
 
 t = time to expiration.
 
-To be continued.........
-    
+Sum of t=i to T (Forward Rate - Strike)/(1 - rt)**t
+
+where
+
+r = discount rate for time period t
+T = term of the swap
+i = first exchange date of the coupons.
+
+For semiannual periods, this is equivalent to:
+
+sum of t = i to T (Forward Rate/2.0 - Strike/2.0)/(1 - rt/2.0)**t
+
+where 
+F = 9.6416 #forward rate 
+S =  9.50  #strike rate =
+cashflow =  9.6416/2.0 - 9.50/2.0 #F/2 - S/2 
+period = 4
+forwardStartDate = 5
+ 
+def anuitizedModelSpread(cashflow,period, spot,forwardStartDate):
+    sum=0.0
+    for x in range(1,period+1):
+        sum = sum + (1/((1+spot)**(x))) * cashflow
+    return sum * discountFactors[forwardStartDate*2 -1]
+
+print
+print anuitizedModelSpread(cashflow,period, spot,forwardStartDate)
+#0.158587624369
+
+The five-year spot-rate discount factor (DFs) is 0.6290.  The equation aboveis equivalent to:
+
+Spread_Difference = 9.6416/2.0 - 9.50/2.0
+print discountFactors[10:] #[0.60024811864734617, 0.57268091862575743, 0.54630785249998259, 0.52107854757298466]
+#The above is the discount factor for years 5.5,6.0,6.5and 7.0
+#Spread_Difference * (DF5.5 + DF6.0 + DF6.5 + DF7.0)
+Spread_Difference * sum(discountFactors[10:])
+#0.15861433296410227 or 0.15866
+
+This is the net spread discounted for each of the periods.  Incidentally, 0.1586 is the up-front marked-to-market value for a
+forward swap.  A forward swap to pay fixed at a strike at strike of 9.50 would be worth 0.1586 basis points up front.  A forward swap
+to receive fixed at 9.50 would be worth -0.1586.  Receiving fixed at 9.50 is below the forward rate 9.4616; therefore a counterparty would require
+an up-front payment to enter this swap.)
+
+Thus the present value of a forward swap is
+
+Call(Put Swaption) - Put(Call Swaption)
+
+1.1304 - 0.9718 = 0.1586
+
+Furthermore:
+
+Pay-Fixed Forward Swap = Buy Call (Put Swaption) + Sell Put (Call Swaption)
+
+= 1.1304 - 0.9718 = 0.1586
+
+Received-Fixed Forward Swap
+
+=Sell Call(Put Swaption) + Buy Put(Call Swaption)
+
+= -1.1305 + 0.9718 = -0.1586
+
+Put-call parity implies that the purchase of a long-term straight bond combined with the right to pay fixed (put swaption) is equivalent to the 
+purchase of a short-term bond combined with the right to recevie fixed fixed (call swaption). The former is preferable when forward rates
+are relatively low and the latter is preferable when forward rates are relatively high.
+
 """
+
 
 
