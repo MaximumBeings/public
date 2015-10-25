@@ -1,5 +1,5 @@
 """
-Topic: A Simple Method For Pricing Interest Rate Swaptions (40% Done)
+Topic: A Simple Method For Pricing Interest Rate Swaptions (100% Done)
 
 Source: FA Journal By the CFA Institute 1991 By David R. Smith
 
@@ -11,7 +11,8 @@ will continue with the implementation soon. The output from this model are the s
 See you next time!!!
 
 Addendum: The model is done but I did not release the codes just shells where applicable.  Now we are going to 
-test the validity of the model using put-call parity as done in the Journal.  See you next time!!
+test the validity of the model using put-call parity as done in the Journal.  See you next time!! Will be published
+in an article.
 
 """
 
