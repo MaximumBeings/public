@@ -267,7 +267,7 @@ $971,809.80 : This up-front value of 0.9718 is equivalent to $971,809.80 on a $1
 CHECKING THE VALIDILITY OF THE MODEL:
 The validity of the model can be checked by applying the put-call parity theorem.  The put-call parity theorem specifies that:
 
-Price of Call - Price of Put = F = X * e ** (-r * T)    
+Price of Call - Price of Put = F - X * e ** (-r * T)    
 
 where
 
