@@ -10,6 +10,9 @@ analytically soon.  Anyways, what we have done so far will feed into our model t
 will continue with the implementation soon. The output from this model are the spot rates and discount rates.
 See you next time!!!
 
+Addendum: The model is done but I did not release the codes just shells where applicable.  Now we are going to 
+test the validity of the model using put-call parity as done in the Journal.  See you next time!!
+
 """
 
 
@@ -166,5 +169,113 @@ weekend...but forgot to update on github.
 
 """
 
+def forwardRateCalculator(zeroRates,sTART,sTOP):
+    return f
+
+forwardRateCalculator = forwardRateCalculator(zeroRates,5,7)
+
+print
+print ("The 7 year forward rate starting  in year 5 is %s " % forwardRateCalculator)
+
+
+"""
+EXAMPLE:  Consider, as an example, a forward semi-annual swap beginning five years from now and having a term of two years
+(i.e., ending in seven years). A forward swap beginning in five years for a term of two years is conventionally described as a 
+"seven/five" swap.  For a seven/five forward swap, the forward rate is as calculated above.  This rate becomes the underlying
+security price for the "Black 76" commodity option model.  The model uses the following input
+
+(a) the forward rate as the underlying price
+(b) the swaption strike as the exercise price
+(c) the spot rate at the expiration date of the swaption as the interest rate and
+(d) an implied volatility specified by the user.
+"""
+
+Settlement_Date = datetime.date(1990, 3, 14)
+Maturity_Date = datetime.date(1995, 3, 14)
+t = (Maturity_Date - Settlement_Date).days
+SP = 9.6416/100.0 # Underlying Security Price or the Forward Rate starting in year 5 and ending in year 7
+EP = 9.500/100.0 #Exercise Price or Swaption Strike
+r = 9.4887/100.0 #Spot Rate in Year 5 when the option expires and the forward swap kicks in
+v = 11.0/100.0 #implied volatility chosen by user
+# N = Normal Cumulative Density Function
+# D = Delta = N(d1) for calls and N(d2) for puts
+
+#implement a function to calculate Cumulative Density Function
+
+def cumm_dens_function_scipy(t):
+    return scipy.stats.norm.cdf(t)
+
+
+def blackSeventySix(SP,EP,r,v,t):
+    return result
+
+print
+
+print blackSeventySix(SP,EP,r,v,t)
+
+#{'put': 0.54584416243351719, 'call': 0.63489682074640741}
+
+
+#result = blackSeventySix(SP,EP,r,v,t)
+#
+#for key, value in result.iteritems():
+#    print key, value
+
+"""
+IMPORTANT NOTES FROM THE JOURNAL:
+Because the option is on a forward rate (the forward spot rate), the call option derived from the model benefits
+when the forward rate rises while the put option benefits when the forward rate falls. In practice, swaptions are defined
+in line with bond options.  Bond prices move inversely with interest rates; a bond put is thus used to hedge against higher
+rates. The call price derived from the "Black 76" model thus actually applies to put swaptions while the put price applies
+to call swaptions.
+
+A put swaption is better known as a "right-to-pay-fixed" or payer swaption.  Having the right to pay fixed at a predetermined
+rate (the strike price) is beneficial if rates rise.  A call swaption is better known as a "right-to-receive-fxed" or receiver 
+swaption.  It benefits when rates fall.
+"""
+
+"""
+ANNUITIZING MODEL PRIZES:
+The call price that the option model generates for the put swaption represents 63.49 semiannual basis points for two years
+(because the underlying rates were semiannual bond rates).
+The up-front price (present value) of the put swaption would be 63.49118 basis points annuitized for the term of the swap.
+This represents 31.745 (63.49/2) per period over four periods.  
+This price must be discounted by thr two year forward swap rate five years forward (9.6416 or 4.8208 per period)
+
+"""
+#{'put': 0.54584416243351719, 'call': 0.63489682074640741}
+
+
+
+print 
+#print anuitizedModelPricePutSwaption(cashflow,period, spot)    
+print
+value_put_swaption = anuitizedModelPricePutSwaption(cashflow,period, spot)/100 * 100000000
+print str(locale.currency(value_put_swaption,grouping=True)) + " : This up-front value of 1.1304 is equivalent to $1,130,400 on a $100 million notional principal amount"
+
+print
+value_call_swaption = anuitizedModelPriceCallSwaption(cashflow,period, spot)/100 * 100000000
+print str(locale.currency(value_call_swaption,grouping=True))  + " : This up-front value of 0.9718 is equivalent to $971,809.80 on a $100 million notional principal amount"
+
+
+"""
+CHECKING THE VALIDILITY OF THE MODEL:
+The validity of the model can be checked by applying the put-call parity theorem.  The put-call parity theorem specifies that:
+
+Price of Call - Price of Put = F = X * e ** (-r * T)    
+
+where
+
+F = value of underlying security at expiration (present value of forward rate at expiration)
+
+X = present value of strike at expiration
+
+r = interest rate and
+
+t = time to expiration.
+
+To be continued.........
+    
+"""
 
 
