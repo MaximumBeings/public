@@ -257,7 +257,12 @@ print
 value_call_swaption = anuitizedModelPriceCallSwaption(cashflow,period, spot)/100 * 100000000
 print str(locale.currency(value_call_swaption,grouping=True))  + " : This up-front value of 0.9718 is equivalent to $971,809.80 on a $100 million notional principal amount"
 
+"""
+$1,130,357.33 : This up-front value of 1.1304 is equivalent to $1,130,400 on a $100 million notional principal amount
 
+$971,809.80 : This up-front value of 0.9718 is equivalent to $971,809.80 on a $100 million notional principal amount
+
+"""
 """
 CHECKING THE VALIDILITY OF THE MODEL:
 The validity of the model can be checked by applying the put-call parity theorem.  The put-call parity theorem specifies that:
