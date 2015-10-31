@@ -4,8 +4,15 @@ Topic:  Applcaitions of Binomial Short Rate Models
 Source: Binomial Pricing of Interest Rate Derivatives - Don Chance 1998
 
 Discussion:  We will be using the above article to model different interest rate instruments such as FRAs, Caps,
-Floors, Swaptions and Swaps.  Below is the model for FRAs.   Here we take the short rate mmodel as given...but recall that
-we modeled short rate models before.  We will continue with the rest of the implementation next time.
+Floors, Swaptions and Swaps.  Below is the model for FRAs.   Here we take the short rate mmodel as given...but 
+recall that we modeled short rate models before.  We will continue with the rest of the implementation next time.
+Will be featured in an upcoming article.  One Love!!!
+
+PLAN:
+FRAs -  Done
+Interest Caps and Floors  - Pending
+Interest Rate Swaps  - Pending
+Interest Rate Swaption - Pending
 """
 
 from scipy.optimize import fsolve
