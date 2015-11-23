@@ -100,3 +100,122 @@ print(df.to_string(index=False))
 
 """
 
+"""
+Below is a crude prototype I created for calculating caps and floors
+will be converted to a function by this weekend
+"""
+
+"""
+Interest Rate Caps and Floors:
+    An interest rate cap is a series of independent call options on an
+    interest rate while a floor is aseries of independent put options on
+    interest rate. For example, a three-period cap with a strike rate of
+    10% contains a call option on the rate with a strike rate of 10% 
+    expiring at time 1, another call option on the rate with a strike rate 
+    of 10% expiring at time 2, and a third call option on the rate with a 
+    strike rate of 10% expiring at time 3.
+    
+    The value of a cap or floor is the sum of the values of the component options, 
+    called caplets or floorlets.
+    
+    EXAMPLE:
+    Consider a four-period cap on the one-period rate struck at 9%. The cap consists
+    of four component caplets, one expiring at time 1, one at time 2, one at time 3, and
+    one at time 4.  On each caplet expiration date, the cap pays off the one-period rate
+    minus the strike rate if the former is higher and zero if the latter is higher.
+    
+    PROCEDURE
+    (a) First value the four-period caplet.  The formula for the payoff of a caplet is
+    Max(0, interest rate - exercise rate)/(1 + interest rate)
+    
+    The discount in the denominator is because  the payoff is made one period later.  In
+    other words, if "interesr rate - exercise rate" is positive, the payoffs is made one
+    period later. Hence, we discount by the current one-period rate.
+    
+    (b) Declare variables for the cap.
+    maturity = 4
+    strike = 0.09
+    intRateTree = [[0.105], [0.1206,0.0880], [0.1361, 0.1030, 0.0709], [0.1515,0.1180,0.0854,0.0538], [0.1672, 0.1332, 0.1002, 0.0682, 0.0371]]
+    
+    payOffTree = intRateTree[maturity]
+    payOffListCollector = []
+    for x in range(len(payOffTree)):
+        payOffListCollector.append(max(0, (payOffTree[x] - strike)/(1 + payOffTree[x]))
+    print payOffListCollector
+        
+"""
+maturity = 4
+strike = 0.09
+
+payOffTree = intRateTree[maturity]
+payOffListCollector = []
+for x in range(len(payOffTree)):
+    payOffListCollector.append(max(0, (payOffTree[x] - strike)/(1 + payOffTree[x])))
+print payOffListCollector 
+
+interMediateTree = intRateTree[:maturity]
+interMediateTree.append(payOffListCollector)
+interMediateTree
+
+newMaturity = maturity - 1
+time3Tree = []
+#length = len(newMaturity)
+time3 = interMediateTree[3]
+for x in   range(len(time3)):
+    a = payOffListCollector[x]*0.5 
+    b = payOffListCollector[x+1]*0.5
+    c = (a+b)/(1+time3[x])
+    time3Tree.append(c)
+print time3Tree
+
+payOffListCollector = time3Tree
+
+time2Tree = []
+time2 = interMediateTree[2]
+
+for x in   range(len(time2)):
+    a = payOffListCollector[x]*0.5 
+    b = payOffListCollector[x+1]*0.5
+    c = (a+b)/(1+time2[x])
+    time2Tree.append(c)
+print time2Tree
+
+payOffListCollector = time2Tree
+
+
+
+
+time1Tree = []
+time1 = interMediateTree[1]
+
+for x in   range(len(time1)):
+    a = payOffListCollector[x]*0.5 
+    b = payOffListCollector[x+1]*0.5
+    c = (a+b)/(1+time1[x])
+    time1Tree.append(c)
+print time1Tree
+
+payOffListCollector = time1Tree
+
+
+
+
+time0Tree = []
+time0 = interMediateTree[0]
+
+for x in   range(len(time0)):
+    a = payOffListCollector[x]*0.5 
+    b = payOffListCollector[x+1]*0.5
+    c = (a+b)/(1+time0[x])
+    time0Tree.append(c)
+print time0Tree
+
+payOffListCollector = time0Tree
+
+
+"""
+Final Answer = payOffListCollector[0]
+#0.011051923090166128 same as in the journal
+"""
+
+
