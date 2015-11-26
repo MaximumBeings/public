@@ -218,4 +218,37 @@ Final Answer = payOffListCollector[0]
 #0.011051923090166128 same as in the journal
 """
 
+"""
+Automation of the interest rate cap completed.  This is the final function...all the helper 
+functions not included.  Will be published in an upcoming article
+"""
+
+def finalPrice(maturity, strike, intRateTree):
+    finalOutPut = []
+    for g in range(maturity,0,-1):
+        finalOutPut.append(semiFinal(g, strike, intRateTree)[0])
+    return finalOutPut
+
+prices = finalPrice(maturity, strike, intRateTree)
+
+prices[::-1]
+print
+print
+for x in range(0,4):
+    print "Time " + str(x+1) + ":   " + str(prices[x])
+    
+
+capPrices = sum(prices)
+print
+print "The Price of a Cap Expiring in Four Years is : " + str(round(capPrices,5))
+
+"""
+Time 1:   0.0110519230902
+Time 2:   0.0116238731623
+Time 3:   0.0130228065338
+Time 4:   0.0123560180672
+
+The Price of a Cap Expiring in Four Years is : 0.04805
+
+"""
 
