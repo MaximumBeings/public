@@ -243,6 +243,7 @@ print
 print "The Price of a Cap Expiring in Four Years is : " + str(round(capPrices,5))
 
 """
+#The Price of the Caplets in times 1,2,3 and 4
 Time 1:   0.0110519230902
 Time 2:   0.0116238731623
 Time 3:   0.0130228065338
