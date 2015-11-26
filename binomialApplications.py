@@ -220,7 +220,9 @@ Final Answer = payOffListCollector[0]
 
 """
 Automation of the interest rate cap completed.  This is the final function...all the helper 
-functions not included.  Will be published in an upcoming article
+functions not included.  Will be published in an upcoming article.
+
+Happy Thanksgiving!!!!
 """
 
 def finalPrice(maturity, strike, intRateTree):
