@@ -220,7 +220,7 @@ Final Answer = payOffListCollector[0]
 
 """
 Automation of the interest rate cap completed.  This is the final function...all the helper 
-functions not included.  Will be published in an upcoming article.
+functions not included.  Will be published in an upcoming article. The floor is the opposite.
 
 Happy Thanksgiving!!!!
 """
@@ -233,25 +233,35 @@ def finalPrice(maturity, strike, intRateTree):
 
 prices = finalPrice(maturity, strike, intRateTree)
 
+a = prices[::-1]
+
+import numpy
+tot = numpy.cumsum(a)  # returns a numpy.ndarray
+tot = list(tot) 
+
 prices[::-1]
 print
+
+print
+print "Price of each caplet"
 print
 for x in range(0,4):
-    print "Time " + str(x+1) + ":   " + str(prices[x])
+    print "Time " + str(x+1) + ":   " + str(tot[x])
     
 
 capPrices = sum(prices)
 print
 print "The Price of a Cap Expiring in Four Years is : " + str(round(capPrices,5))
 
+
 """
-#The Price of the Caplets in times 1,2,3 and 4
-Time 1:   0.0110519230902
-Time 2:   0.0116238731623
-Time 3:   0.0130228065338
-Time 4:   0.0123560180672
+Price of each caplet (Running Total or Cumulative Sum)
+
+Time 1:   0.0123560180672
+Time 2:   0.0253788246011
+Time 3:   0.0370026977634
+Time 4:   0.0480546208536
 
 The Price of a Cap Expiring in Four Years is : 0.04805
 
 """
-
