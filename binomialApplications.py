@@ -265,3 +265,79 @@ Time 4:   0.0480546208536
 The Price of a Cap Expiring in Four Years is : 0.04805
 
 """
+
+"""
+Interest Rate Swaps:
+
+Consider the following scenario where zero coupon bond prices are as follows:
+    
+Initial Term Structure of Interest Rates.  The fixed payment on the swap equates the
+present value of the fixed payments to the present value of the floating payments. Remember
+that the value of a swap is zero at the start but the value changes as interest rate changes.
+
+Time 1:   0.905
+Time 2:   0.820
+Time 3:   0.743
+
+Below is a shell of the program....just snippets of the code.
+"""
+
+#Solving Analytically
+
+fixedRateAnalytical = (1 - 0.743)/(0.905 + 0.820 + 0.743)
+print round(fixedRateAnalytical,10)
+
+from scipy.optimize import fsolve
+gUESS = 0.2
+
+def swapFixedRate(gUESS):
+    result = gUESS * (0.905 + 0.820 + 0.743) + (1 * 0.743) - 1.0
+    return result
+
+swapFixedRateNumerical = fsolve(swapFixedRate,0.1)
+print round(swapFixedRateNumerical[0],10)
+
+"""
+Using the above information what is the value of a three-period swap.
+"""
+
+def swapPayOffCalculator(maturity,intRateTree, swapFixedRate):
+    outPut = []
+    nodeOffSet = maturity -1
+
+    return outPut
+    
+swapPayOffCalculator(3,intRateTree, fixedRateAnalytical)
+#[0.028137574919001956, -0.0010271089161576477, -0.031032683849586212]
+
+
+def swapPriceHelper(interMediateTree,payOffTree,swapFixedRate):
+    outPut = []
+
+    return outPut
+    
+#swapPriceHelper(intRateTree[1],test,fixedRateAnalytical)
+#[0.026791300969927066, -0.029561394777016373]
+
+
+def swapPriceCalculator(maturity,intRateTree, swapFixedRate):
+
+    return payOffTree[0]
+
+swapPriceCalculator(3,intRateTree, fixedRateAnalytical)
+#-0.00046873125616881154  #Should be zero (rounding differences)
+
+
+"""
+      Time 0                      Time 1                          Time 2
+
+                                                             0.028137574919001956            
+                             0.026791300969927066   
+
+-0.00046873125616881154                                     -0.0010271089161576477
+
+                            -0.029561394777016373
+                                                            
+                                                            -0.031032683849586212
+"""
+
