@@ -2,7 +2,7 @@ from scipy.optimize import fsolve
 import math
 from scipy.stats import norm
 
-Source: Credit Risk on edx by Crillo
+#Source: Credit Risk on edx by Crillo
 
 """
 Parameters:
