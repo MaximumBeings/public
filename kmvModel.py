@@ -53,7 +53,7 @@ print
 
 
 
-#Compute d1 and d2 explicitly
+#Compute Distance to Default (DD) explicitly
 DD = (math.log(v0/B) + (r + sigmaV**2/2.0)*T)/(sigmaV*math.sqrt(T))
 #d2 = d1 - sigmaV * math.sqrt(T)
 
@@ -64,7 +64,7 @@ print
 
 
 
-#print round(norm.cdf(-d2),5)
+
 print "The Probability of Default is " + str(round(norm.cdf(-DD),5))
 #The Probability of Default is 0.0
 
