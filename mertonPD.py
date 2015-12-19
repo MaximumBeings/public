@@ -119,7 +119,7 @@ def f(v0):
 
 solutions = fsolve(f,[20])  #minimize function using initial values of v0=10 and sigmaV=0.5
 
-#Get the values of v0 and sigmaV that minimizes the solution.
+#Get the values of v0 that minimizes the solution.
 v0 = solutions[0]
 
 
