@@ -32,6 +32,7 @@ I think a Merry Xmas is in order - one love!!!
 
 
 
+
 """
 USD LIBOR - Overnight       0.36740%
 USD LIBOR - 1 Week          0.39000%
@@ -92,7 +93,7 @@ def disc_factor():
     #This program returns a vector of discount factors for the different cashflow payments
     disc_factor = []
     for x in range(len(time)):
-        disc_factor.append(math.exp(-1* time[x]/360.0*zeroRatesD[x]/360.0))
+        disc_factor.append(math.exp(-1* time[x]/360.0*zeroRatesD[x]))
     return disc_factor
     
 zeroDiscounts = disc_factor()
@@ -112,10 +113,11 @@ The output so far look like so:
 SHORT END
     
  Maturities  Number_of_Days  LIBOR_Rates   Zero_Rates  Discount_Rates
- 2015-12-24               1    0.0036740  0.003673981     0.999999972
- 2015-12-30               7    0.0039000  0.003899851     0.999999789
- 2016-01-23              31    0.0041750  0.004174208     0.999999002
- 2016-02-23              62    0.0050970  0.005094404     0.999997563
- 2016-03-23              91    0.0059435  0.005937620     0.999995831
+ 2015-12-24               1    0.0036740  0.003673981     0.999989795
+ 2015-12-30               7    0.0039000  0.003899851     0.999924172
+ 2016-01-23              31    0.0041750  0.004174208     0.999640619
+ 2016-02-23              62    0.0050970  0.005094404     0.999123015
+ 2016-03-23              91    0.0059435  0.005937620     0.998500227
+
 
 """
