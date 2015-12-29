@@ -8,7 +8,45 @@ import copy
 locale.setlocale(locale.LC_ALL, '')
 pd.set_option('display.precision',10)
 
+"""
+As can be observed from the observable data below, the rates for some dates are missing.  Hence we need to interpolate
+the observable rates first then bootstrap.  For example, swap cashflows are exchanged every  quarter or semi-annually but the swap rates
+are available every year from ICE - so we need to interpolate first to connect the instruments and secondly to ensure
+that cashflows that fall on dates without observable rates can be discounted. So we need to first connect the rates and interpolate
+then bootstrap.  It is not important to interpolate first for the short and middle area of the curve because they are available
+for very short intervals but as we move out to the long end interpolation becomes important.  Interpolation can be easily
+implemented in pandas.  But as I will point out later, we have to choose out data points carefully....for now lets not bother 
+about that....see you next time.
 
+Valuation Date = 2015-12-23:
+
+Maturities        Description            Duration In Days     Type        Observed Rate     Source         
+2015-12-24        Overnight              1                    Deposit     0.36740           GlobalRates.Com 
+2015-12-30        One Week               7                    Deposit     0.39000           GlobalRates.Com
+2016-01-23        One Month              31                   Deposit     0.41750           GlobalRates.Com 
+2016-02-23        Two Months             62                   Deposit     0.50970           GlobalRates.Com
+2016-03-23        Three Months           91                   Deposit     0.59435           GlobalRates.Com
+2016-06-23        Six Months             183                  Futures     0.88500           CME
+2016-09-23        Nine Months            275                  Futures     1.04000           CME
+2016-12-23        One Year               366                  Futures     1.20000           CME
+2017-03-23        One Year Three Months  456                  Futures     1.34500           CME
+2017-06-23        One Year Six Months    548                  Futures     1.48500           CME
+2017-09-23        One Year Nine Months   640                  Futures     1.61000           CME
+2017-12-23        Two Years              731                  Futures     1.72500           CME
+2018-12-23        Three Years            1096                 Swap Rate   1.36600           ICE
+2019-12-23        Four Years             1461                 Swap Rate   1.54800           ICE
+2020-12-23        Five Years             1826                 Swap Rate   1.69800           ICE
+2021-12-23        Six Years              2191                 Swap Rate   1.82600           ICE
+2022-12-23        Seven Years            2556                 Swap Rate   1.93400           ICE
+2023-12-23        Eight Years            2912                 Swap Rate   2.02400           ICE
+2024-12-23        Nine Years             3268                 Swap Rate   2.10200           ICE
+2025-12-23        Ten Years              3633                 Swap Rate   2.17200           ICE
+2030-12-23        Fifteen Years          5458                 Swap Rate   2.40700           ICE
+2035-12-23        Twenty Years           7283                 Swap Rate   2.52000           ICE
+2045-12-23        Thirty Years           10933                Swap Rate   2.60800           ICE
+
+
+"""
 
 """
 Topic: Multi Instrument Swap Curve Construction
