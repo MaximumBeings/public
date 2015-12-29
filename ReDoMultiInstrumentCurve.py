@@ -49,6 +49,143 @@ Maturities        Description            Duration In Days     Type        Observ
 """
 
 """
+THE NEED FOR INTERPOLATION:  In order to be useful, we need rates to be available at least on a quarterly basis...assuming
+that is the minimum cashflow duration of our instruments.  So if you look below you will realizethat there are some cashflow
+payment dates without observable rates.  So we need to interpolate then bootstrap.  We are going to use different interpolation
+techniques here though linear is sufficient.  Using other more complex interpolation methodologies is like taking a gun to a knife
+fight....but we will cover them anyways.  And we dont have to move a muscle to use them...we have open source recipes from
+scientific computing that we can use.  See next time.
+
+Maturities        Observed Rate
+2015-12-24        0.36740  
+2015-12-30        0.39000
+2016-01-23        0.41750
+2016-02-23        0.50970
+2016-03-23        0.59435
+2016-06-23        0.88500
+2016-09-23        1.04000
+2016-12-23        1.20000
+2017-03-23        1.34500
+2017-06-23        1.48500
+2017-09-23        1.61000
+2017-12-23        1.72500
+2018-03-23        Not Available
+2018-06-23        Not Available
+2018-09-23        Not Available
+2018-12-23        1.36600
+2019-03-23        Not Available
+2019-06-23        Not Available
+2019-09-23        Not Available
+2019-12-23        1.54800
+2020-03-23        Not Available
+2020-06-23        Not Available
+2020-09-23        Not Available
+2020-12-23        1.69800
+2021-03-23        Not Available
+2021-06-23        Not Available
+2021-09-23        Not Available
+2021-12-23        1.82600
+2022-03-23        Not Available
+2022-06-23        Not Available
+2022-09-23        Not Available
+2022-12-23        1.93400
+2023-03-23        Not Available
+2023-06-23        Not Available
+2023-09-23        Not Available
+2023-12-23        2.02400
+2024-03-23        Not Available
+2024-06-23        Not Available
+2024-09-23        Not Available
+2024-12-23        2.10200
+2025-03-23        Not Available
+2025-06-23        Not Available
+2025-09-23        Not Available
+2025-12-23        2.17200
+2026-03-23        Not Available
+2026-06-23        Not Available
+2026-09-23        Not Available
+2026-12-23        Not Available
+2027-03-23        Not Available
+2027-06-23        Not Available
+2027-09-23        Not Available
+2027-12-23        Not Available
+2028-03-23        Not Available
+2028-06-23        Not Available
+2028-09-23        Not Available
+2028-12-23        Not Available
+2029-03-23        Not Available
+2029-06-23        Not Available
+2029-09-23        Not Available
+2029-12-23        Not Available
+2030-03-23        Not Available
+2030-06-23        Not Available
+2030-09-23        Not Available
+2030-12-23        2.40700
+2031-03-23        Not Available
+2031-06-23        Not Available
+2031-09-23        Not Available
+2031-12-23        Not Available
+2032-03-23        Not Available
+2032-06-23        Not Available
+2032-09-23        Not Available
+2032-12-23        Not Available
+2033-03-23        Not Available
+2033-06-23        Not Available
+2033-09-23        Not Available
+2033-12-23        Not Available
+2034-03-23        Not Available
+2034-06-23        Not Available
+2034-09-23        Not Available
+2034-12-23        Not Available
+2035-03-23        Not Available
+2035-06-23        Not Available
+2035-09-23        Not Available
+2035-12-23        2.52000
+2036-03-23        Not Available
+2036-06-23        Not Available
+2036-09-23        Not Available
+2036-12-23        Not Available
+2037-03-23        Not Available
+2037-06-23        Not Available
+2037-09-23        Not Available
+2037-12-23        Not Available
+2038-03-23        Not Available
+2038-06-23        Not Available
+2038-09-23        Not Available
+2038-12-23        Not Available
+2039-03-23        Not Available
+2039-06-23        Not Available
+2039-09-23        Not Available
+2039-12-23        Not Available
+2040-03-23        Not Available
+2040-06-23        Not Available
+2040-09-23        Not Available
+2040-12-23        Not Available
+2041-03-23        Not Available
+2041-06-23        Not Available
+2041-09-23        Not Available
+2041-12-23        Not Available
+2042-03-23        Not Available
+2042-06-23        Not Available
+2042-09-23        Not Available
+2042-12-23        Not Available
+2043-03-23        Not Available
+2043-06-23        Not Available
+2043-09-23        Not Available
+2043-12-23        Not Available
+2044-03-23        Not Available
+2044-06-23        Not Available
+2044-09-23        Not Available
+2044-12-23        Not Available
+2045-03-23        Not Available
+2045-06-23        Not Available
+2045-09-23        Not Available
+2045-12-23        2.60800
+  
+
+"""
+
+"""
 Topic: Multi Instrument Swap Curve Construction
 
 Source: Ron Uri - A Practical Guide to Swap Curve Contruction - Bank of Canada (Google it).
@@ -65,7 +202,6 @@ The original one can be found here - https://github.com/MaximumBeings/public/blo
 
 I think a Merry Xmas is in order - one love!!!....Mid area completed and long end remainining. Incomplete codes posted to github.
 Long end will be completed shortly
-
 
 """
 
