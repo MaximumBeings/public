@@ -54,7 +54,8 @@ that is the minimum cashflow duration of our instruments.  So if you look below 
 payment dates without observable rates.  So we need to interpolate then bootstrap.  We are going to use different interpolation
 techniques here though linear is sufficient.  Using other more complex interpolation methodologies is like taking a gun to a knife
 fight....but we will cover them anyways.  And we dont have to move a muscle to use them...we have open source recipes from
-scientific computing that we can use.  See next time.
+scientific computing that we can use.  We already did something similar on LIBOR and NIBOR but subtle differences and different
+objectives or end goal.  See next time.
 
 Maturities        Observed Rate
 2015-12-24        0.36740  
