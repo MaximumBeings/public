@@ -9,6 +9,8 @@ locale.setlocale(locale.LC_ALL, '')
 pd.set_option('display.precision',10)
 
 """
+Happy New Year!!!!!! We will try and finish this thing by this weekend and polish it...See you next time.
+
 As can be observed from the observable data below, the rates for some dates are missing.  Hence we need to interpolate
 the observable rates first then bootstrap.  For example, swap cashflows are exchanged every  quarter or semi-annually but the swap rates
 are available every year from ICE - so we need to interpolate first to connect the instruments and secondly to ensure
