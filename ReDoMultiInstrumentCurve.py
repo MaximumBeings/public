@@ -348,7 +348,7 @@ Maturities
 """
 
 """
-COMBINATION OF OBSERVED WITH REQUIRED MATURITIES WITHOUT INTERPOLATION NaN = Null and are required to be filled:
+COMBINATION OF OBSERVED WITH REQUIRED MATURITIES WITH INTERPOLATION NaN = Null and are required to be filled:
     
 Maturities  Observed_Rates
  2015-12-24         0.36740
@@ -608,7 +608,7 @@ Maturities  Observed_Rates
  2045-12-23         2.60800
 
 """
-
+###All the above to be bootstrapped.
 
 """
 Topic: Multi Instrument Swap Curve Construction
