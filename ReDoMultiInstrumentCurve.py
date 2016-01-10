@@ -977,5 +977,5 @@ Swap_Maturities  Swap_Observed_Rates  Swap_Zero_Rates  Swap_Discount_Rates
 
 """
 Bootstrapping done....Now we have to polish the model and interpolate one more time so that zero rates and discount
-rates are available on a daily basis.  See you next time!!!
+rates are available on a daily basis.  To be published in an upcoming article.  See you next time!!!
 """
