@@ -982,6 +982,13 @@ rates are available on a daily basis.  To be published in an upcoming article.  
 
 """
 This is the complete and final rates on a daily basis for the next 30 years...bootstrapped and interpolated.
+Done.  Completed. 
+NEXT PROJECTS:
+Now what is next? An interesting topic I am considering is Multi-Curve Modeling Using Trees by John Hull
+and Alan White or Understanding CVA, DVA, and FVA: Examples of Interest Rate Swap Valuation by Don Smith.  Maybe I will do
+them simultaneously but I want us  to first finish Applications of Binomial Models by Martin Haugh and Don Chance.  They are
+not necessary to complete the news ones but they are good building blocks for those interested and are good for building 
+intuition....it is a longer route but hey maybe some people like taking the longer way home.  One love and see you next time!!!
 
 
 Maturities        Rates   Zero_Rates  Discount_Rates
