@@ -986,8 +986,8 @@ Done.  Completed.
 NEXT PROJECTS:
 Now what is next? An interesting topic I am considering is Multi-Curve Modeling Using Trees by John Hull
 and Alan White or Understanding CVA, DVA, and FVA: Examples of Interest Rate Swap Valuation by Don Smith.  Maybe I will do
-them simultaneously but I want us  to first finish Applications of Binomial Models by Martin Haugh and Don Chance.  They are
-not necessary to complete the news ones but they are good building blocks for those interested and are good for building 
+them simultaneously but I want us  to first finish Applications of Binomial Models by Martin Haugh and Don Chance (separate projects).  They are
+not necessary to complete the new ones but they are good building blocks for those interested and are good for building 
 intuition....it is a longer route but hey maybe some people like taking the longer way home.  One love and see you next time!!!
 
 
