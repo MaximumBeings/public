@@ -1,9 +1,10 @@
+"""
 Title: Simple Floater 
 
 Source: Google it
 
 Discussion: To be used in an upcoming article.  See you next time.
-
+"""
 import datetime
 from dateutil.relativedelta import relativedelta
 
