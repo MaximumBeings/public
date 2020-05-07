@@ -1,4 +1,4 @@
 public
 ======
 
-Fixed Income Valuation Recipes in Python
+Fixed Income Valuation Recipes in Python by Oluwaseyi Adebayo Awoga (Tony)
