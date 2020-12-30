@@ -189,9 +189,15 @@ if __name__ == '__main__':
         N = 365
         simResult = monteCarloSimulation(N, Mu, Sigma, S0, NSim)
         prob = calcCrashProb(simResult, S0, 0.113)
+        if ticker == '^IXIC':
+            ticker = 'NASDAQ'
+        if ticker == '^DJI':
+            ticker = 'Dow Jones Index'
+        if ticker == '^GSPC':
+            ticker = 'S&P 500'
         print("")
         print(
-            "The Prob of an 11.3 Percent Fall in NASDAQ over the Next 365 Days is:  %2.13f " %
+            "The Prob of an 11.3 Percent Fall in " +  ticker + " over the Next 365 Days is:  %2.13f " %
             (prob))
         plotSimulation(ticker, simResult, N)
         plt.show()
