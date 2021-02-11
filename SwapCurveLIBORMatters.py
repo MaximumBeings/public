@@ -6,7 +6,7 @@ Created on Thu Sep 10 20:48:31 2020
 @author: oluwaseyiawoga
 """
 """
-Slightly refactored from an old cold for a paper entitled - LIBOR Transitions - Matters Arising (
+Slightly refactored from an old code for a paper entitled - LIBOR Transitions - Matters Arising.
 """
 
 """
