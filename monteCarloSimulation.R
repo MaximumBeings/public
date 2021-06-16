@@ -22,6 +22,9 @@ calculate the expected value of the stock price at the end of every successive Î
  
  Implementation:
  The R code at the Github link below shows how one may implement the above.
+
+ Github:
+ https://tinyurl.com/uu86e8aw
  
  References:
  (a) WQU Statistics Class Lectures & Notes (circa 2017)
