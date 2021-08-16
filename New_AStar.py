@@ -30,6 +30,7 @@ import pprint
 import math
 
 #board.txt
+#https://github.com/MaximumBeings/public/blob/master/board.txt
 """
 0,1,0,0,0,0,
 0,1,0,0,0,0,
