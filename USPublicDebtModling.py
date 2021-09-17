@@ -144,5 +144,5 @@ newFinal["GDP"] = GDP
 #Generate a plot of percentage change in US Debt, GDP and Market Indexes
 newFinal[:-1].plot(figsize=(15,12),title='US Govt Public Debt Versus GDP & Market Indexes (DOW, S&P & NASDAQ)\n Cumulative Percentage Change\n 1993-2021 [Annual Data]\nSource:  US Treasury Data API',xlabel="Record Date",ylabel='Cumulative Percentage Change (%)')
 
-
+print(newFinal)
 
