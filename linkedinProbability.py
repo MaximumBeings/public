@@ -7,6 +7,10 @@ Created on Wed Sep 28 14:12:40 2022
 """
 import random 
 import pandas as pd
+import pandas as pd
+pd.set_option('display.max_rows', 500)
+pd.set_option('display.max_columns', 500)
+pd.set_option('display.width', 1000)
 """
 A,B and C play a table tennis tournament. The winner of the tournament will be the first person to win two games in a row. 
 In any game, whoever is not playing acts as refree, and each player has equal chance of winning the game. The first game of the
