@@ -241,14 +241,14 @@ print()
 spreadPricing = calCoupDiscFactors(rateEURIBOR,tenorEURIBOR, rateSOFR, tenorSOFR, 0.97782)
 print(f"The Spread over SOFR Term Rates if EURIBOR is the Base Currency is: {spreadPricing}")   
 """
-2.49984316448582
+The Spread over SOFR Term Rates if EURIBOR is the Base Currency is: -1.9411784850503233
 """    
 
 print()
 spreadPricing = calCoupDiscFactors( rateSOFR, tenorSOFR,rateEURIBOR,tenorEURIBOR, 1/0.97782)
 print(f"The Spread over EURIBOR Term Rates if SOFR is the Base Currency is: {spreadPricing}")       
 """
-2.499843164485829
+he Spread over EURIBOR Term Rates if SOFR is the Base Currency is: 1.9879871667665452
 """
 
 
